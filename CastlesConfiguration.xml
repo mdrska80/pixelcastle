@@ -3,7 +3,7 @@
     <!-- Aktualni adresar, ze ktereho budou brana herni data -->
     <!-- Typicky v tomto pripade je mozne zvolit  moznost puvodni hry -->
     <!-- Ci nejake modifikace -->
-    <DataFolder>../../Game/Data/</DataFolder>
+    <DataFolder>Data/</DataFolder>
 
     <!-- Dojde k automatickemu prenahravani levelovych souboru, tak aby byly hned videt zmeny na obrazovce -->
     <!-- Ve vysledku toto musi byt nastavene na false -->
@@ -185,10 +185,10 @@
         <Gfx gfx="Gfx/Column.png" />
 
         <!-- Gems -->
-        <Gfx gfx="Gem.png" />
-        <Gfx gfx="GemCrime.png" />
-        <Gfx gfx="GemGreen.png" />
-        <Gfx gfx="GemRed.png" />
+        <Gfx gfx="Gfx/Gems/Gem.png" />
+        <Gfx gfx="Gfx/Gems/GemCrime.png" />
+        <Gfx gfx="Gfx/Gems/GemGreen.png" />
+        <Gfx gfx="Gfx/Gems/GemRed.png" />
 
         <!-- Objects -->
         <Gfx gfx="Gfx/Items/Barrel.png" />

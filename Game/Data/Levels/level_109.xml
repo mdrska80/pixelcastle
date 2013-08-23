@@ -25,6 +25,7 @@ layer = layer
 <Level name="Template level" theme="stone">
   <Platforms>
     <Platform x="1" y="1" type="Column" layer="6" />
+    <Platform x="1" y="1" type="Column" layer="0" />
     <Platform x="2" y="1" type="Column" layer="6" />
     <Platform x="3" y="1" type="Column" layer="7" />
     <Platform x="4" y="1" type="Column" layer="8" />
@@ -96,11 +97,11 @@ layer = layer
     <Platform x="-7" y="10" type="Column" layer="0" />
     <Platform x="-5" y="10" type="Column" layer="0" />
     <Platform x="3" y="10" type="Column" layer="0">
-      <elevator Low="0" High="24" Current="18" Direction="up" />
+      <elevator Low="0" High="24" Current="18" Direction="up" IsStopped="false" />
     </Platform>
     <Platform x="4" y="10" type="Column" layer="24" />
     <Platform x="5" y="10" type="Column" layer="0">
-      <elevator Low="0" High="24" Current="18" Direction="up" />
+      <elevator Low="0" High="24" Current="18" Direction="up" IsStopped="false" />
     </Platform>
     <Platform x="8" y="10" type="Column" layer="4" />
     <Platform x="9" y="10" type="Column" layer="3" />
@@ -147,11 +148,12 @@ layer = layer
     <Platform x="-4" y="14" type="Column" layer="0" />
     <Platform x="-3" y="14" type="Column" layer="0" />
     <Platform x="-2" y="14" type="Column" layer="0" />
-
-    <Platform x="-1" y="14" type="Column" contains="" layer="0" >
-        <action Name="CustomAction" Param1="24" />
+    <Platform x="-1" y="14" type="Column" layer="0">
+      <action>
+        <IsOneTimeAction>false</IsOneTimeAction>
+        <IsActive>false</IsActive>
+      </action>
     </Platform>
-
     <Platform x="0" y="14" type="Column" layer="0" />
     <Platform x="1" y="14" type="Column" layer="0" />
     <Platform x="2" y="14" type="Column" layer="0" />
@@ -215,7 +217,7 @@ layer = layer
     <Platform x="-10" y="23" type="Column" layer="0" />
     <Platform x="-13" y="24" type="Column" layer="1" />
     <Platform x="-12" y="24" type="Column" layer="0" />
-    <Platform x="-11" y="24" type="Column" layer="0" isPressurePlate="true" />
+    <Platform x="-11" y="24" type="Column" layer="0" />
   </Platforms>
   <EntityDefs>
     <EntityDef X="1" Y="17" Layer="0" ET="Player" Class="Castles.Player" />
