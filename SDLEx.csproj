@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7041652D-155C-4F62-99CF-35CDBE5AB3A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Castles</RootNamespace>
+    <AssemblyName>Castles</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SdlDotNet">
+      <HintPath>..\SDL\SdlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="actions\action_generateMonster.cs" />
+    <Compile Include="actions\action_jump.cs" />
+    <Compile Include="actions\action_togglePlatform.cs" />
+    <Compile Include="actions\action_warp.cs" />
+    <Compile Include="gameObjects\items\barrel.cs" />
+    <Compile Include="gameObjects\items\bucket.cs" />
+    <Compile Include="gameObjects\items\doubleGem.cs">
+      <DependentUpon>gem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameObjects\items\trippleGem.cs">
+      <DependentUpon>gem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameObjects\level\door.cs" />
+    <Compile Include="gameObjects\level\IToogable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <!-- GameObjects -->
+    <Compile Include="gameObjects\entity.cs" />
+    <Compile Include="gameObjects\monster.cs" />
+    <Compile Include="gameObjects\player.cs" />
+    <!-- GameObjects, Level related -->
+    <Compile Include="gameObjects\level\blinking.cs" />
+    <Compile Include="gameObjects\level\dimension.cs" />
+    <Compile Include="gameObjects\level\elevator.cs" />
+    <Compile Include="gameObjects\level\generator.cs" />
+    <Compile Include="gameObjects\level\level.cs" />
+    <Compile Include="gameObjects\level\level.transformations.cs">
+      <DependentUpon>level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameObjects\level\entityDef.cs" />
+    <Compile Include="gameObjects\level\moving.cs" />
+    <Compile Include="gameObjects\level\platform.cs" />
+    <!-- ingame items -->
+    <Compile Include="gameObjects\items\item.cs" />
+    <Compile Include="gameObjects\items\honeyCauldron.cs" />
+    <Compile Include="gameObjects\items\magicCap.cs" />
+    <Compile Include="gameObjects\items\gem.cs" />
+    <Compile Include="gameObjects\items\box.cs" />
+    <!-- Specific monsters -->
+    <Compile Include="gameObjects\monsters\bees.cs" />
+    <Compile Include="gameObjects\monsters\crystalBall.cs" />
+    <Compile Include="gameObjects\monsters\feedingTree.cs" />
+    <Compile Include="gameObjects\monsters\toughTree.cs" />
+    <Compile Include="gameObjects\monsters\deadTree.cs" />
+    <Compile Include="gameObjects\monsters\thuja.cs" />
+    <Compile Include="gameObjects\monsters\testMob.cs" />
+    <Compile Include="gameObjects\monsters\Snowman.cs" />
+    <Compile Include="gameObjects\monsters\Booobak_monster.cs" />
+    <!-- actions -->
+    <Compile Include="actions\action.cs" />
+    <Compile Include="actions\action_teleport.cs" />
+    <Compile Include="actions\action_addLife.cs" />
+    <Compile Include="actions\action_destroyPlatform.cs" />
+    <Compile Include="actions\action_createPlatform.cs" />
+    <!-- Managers -->
+    <Compile Include="Managers\resourceManager.cs" />
+    <Compile Include="Managers\screenManager.cs" />
+    <Compile Include="Managers\inputController.cs" />
+    <!-- Common -->
+    <Compile Include="program.cs" />
+    <Compile Include="game.cs" />
+    <!-- Views -->
+    <Compile Include="Statistics\Profile.cs" />
+    <Compile Include="Statistics\Statistics.cs" />
+    <Compile Include="Tools\theme.cs" />
+    <Compile Include="Views\Base\BaseView.cs" />
+    <Compile Include="Views\Board.cs" />
+    <Compile Include="Views\gameoverView.cs" />
+    <Compile Include="Views\interfaceView.cs" />
+    <Compile Include="Views\levelView.cs" />
+    <Compile Include="Views\backgroundView.cs" />
+    <Compile Include="Views\gameView.cs" />
+    <Compile Include="Views\editorView.cs" />
+    <Compile Include="Views\debugView.cs" />
+    <Compile Include="Views\mapView.cs" />
+    <!-- Configuration -->
+    <Compile Include="Conf\CastlesConfigurationReader.cs" />
+    <Compile Include="Conf\CastlesConfiguration.cs" />
+    <!-- Tools -->
+    <Compile Include="Tools\Serializer.cs" />
+    <Compile Include="Tools\Extensions.cs" />
+    <Compile Include="Tools\enums.cs" />
+    <Compile Include="Tools\common.cs" />
+    <Compile Include="Tools\score.cs" />
+    <Compile Include="gameObjects\items\Booobak_item.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CastlesConfiguration.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+sokoban like ...push something to pressure pad etc
+partial levels, complete part and then move to another part
+full extensibility
+
+cooperative mode?
+
+veci na stenach.. drawn on fixed location
+
+-- reload resources
+
+special buildings which will allow to enter secret level

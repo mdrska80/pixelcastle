@@ -1,0 +1,225 @@
+﻿<CastlesConfiguration>
+    
+    <!-- Aktualni adresar, ze ktereho budou brana herni data -->
+    <!-- Typicky v tomto pripade je mozne zvolit  moznost puvodni hry -->
+    <!-- Ci nejake modifikace -->
+    <DataFolder>../../../Data2/</DataFolder>
+
+    <!-- Dojde k automatickemu prenahravani levelovych souboru, tak aby byly hned videt zmeny na obrazovce -->
+    <!-- Ve vysledku toto musi byt nastavene na false -->
+    <PermaLevelReloading>false</PermaLevelReloading>
+
+    <!-- Na obrazovce bude videt cesta monstra ke hraci -->
+    <HighlightPathfinding>true</HighlightPathfinding>
+
+    <Bonuses>
+        <magichat>500</magichat>
+        <cauldron>1000</cauldron>
+
+        <!-- Booobak item is item which will create monster who will eat tough trees -->
+        <booobak>500</booobak>
+        <extraLifein>60000</extraLifein>
+    </Bonuses>
+
+    <!-- Player is immortal -->
+    <Immortal>true</Immortal>
+
+    <ActiveProfile>Martin</ActiveProfile>
+
+    <!-- Monster settings -->
+    <FeedingTime>5</FeedingTime>
+
+    <!-- How are monsters and players placed on board -->
+    <EntityDefs>
+        <EntityDef ET="TreeFeeding" ShiftX="6" ShiftY="12" Class="Castles.FeedingTree" />
+        <EntityDef ET="TreeTough" ShiftX="-7" ShiftY="13" Class="Castles.ToughTree" />
+
+        <EntityDef ET="TestMob" ShiftX="8" ShiftY="13" Class="Castles.TestMob" >
+            <Description>Mob only for testing purposes.</Description>
+        </EntityDef>
+        
+        <EntityDef ET="TreeDead" ShiftX="-7" ShiftY="13" Class="Castles.DeadTree" >
+            <Description>Dead tree gave up all his life to create new gems.</Description>
+        </EntityDef>
+
+        <EntityDef ET="Thuja" ShiftX="8" ShiftY="13" Class="Castles.Thuja" />
+        <EntityDef ET="Snowman" ShiftX="8" ShiftY="13" Class="Castles.Snowman" />
+
+        <EntityDef ET="Booobak" ShiftX="7" ShiftY="1" Class="Castles.Booobak" >
+            <Description>Booobak is entity which will help player to get rid of tough trees. There are two species which can be used.</Description>
+        </EntityDef>
+
+        <EntityDef ET="Player" ShiftX="7" ShiftY="1" Class="Castles.Player" />
+    </EntityDefs>     
+
+    <Editor>
+        <DefaultPlatform Gfx="platformStone.png" Type="Column" />
+        <DefaultPlatformSpecial Gfx="platformViolet.png" Type="Column" />
+
+        <Level>109</Level>
+
+        <!-- Development levels -->
+        <!-- 103 - custom gfx -->
+        <!-- 104 - zoo -->
+        <!-- 105 - template level -->
+        <!-- 106 - elevators with monsters -->
+        <!-- 107 - booobak testing -->
+        <!-- 108 - test level -->
+
+        <!-- 109 - sand level + window -->
+      
+      <!-- 110 paradox level using teleports -->
+
+    </Editor>
+
+    <Levels>
+        <Board Name="Ball Wave" Path="Levels/level_01_01.xml" Level="1" />
+        <Board Name="Tree Wave" Path="Levels/level_01_02.xml" Level="2" />
+        <Board Name="Doomsdome" Path="Levels/level_01_03.xml" Level="3" />
+        <Board Name="Berthilda's Castle" Path="Levels/level_01_04.xml" Level="4" />
+
+
+        <!-- dynamic moving levels...psychedelic - wave etc.:) -->
+
+        <!-- generate monster levels -->
+        <!-- feeding tree levels -->
+        <!-- booobak level -->
+        <!-- add life action -->
+        <!-- create/destroy platforms level -->
+        <!-- teleports -->
+        <!-- pushing boxes action -->
+        <!-- chasing a monster level... -->
+        <!-- paradox levels? -->
+
+
+
+        <!-- Development levels -->
+            
+            <!-- 100,2 - test platform -->
+            <Board Path="Levels/level_100_02.xml" Level="102" />
+
+            <!-- 100,3 - custom gfx -->
+            <Board Path="Levels/level_100_03.xml" Level="103" />
+
+            <!-- 100,4 - zoo -->
+            <Board Path="Levels/level_100_04.xml" Level="104" />
+
+            <!-- 100,5 - template level -->
+            <Board Path="Levels/level_100_05.xml" Level="105" />
+
+            <!-- 100,6 - elevators with monsters -->
+            <Board Path="Levels/level_100_06.xml" Level="106" />
+
+            <!-- 100,7 - booobak testing -->
+            <Board Path="Levels/level_100_07.xml" Level="107" />
+    </Levels>
+
+    <Graphics ShiftX="24" ShiftY="6" ShiftY2="17" />
+    
+    <Gfxs>
+        <!-- Platforms -->
+
+        <!-- Systemova platforma, ktera se zobrazi v pripade ze spravna grafika pro platformu neni nalezena -->
+        <Gfx gfx="Gfx/Platforms/platformError.png" />
+
+        <!-- Systemova platforma zobrazujici cestu mobu k hracovi, resp k targetu -->
+        <Gfx gfx="Gfx/Platforms/platformSpecial.png" />
+
+        <Gfx gfx="Gfx/Platforms/platform.png" />
+
+      <!-- rock theme -->
+      <Gfx gfx="Gfx/Platforms/themes/rock/platform.png" theme="rock" probabilty="90"/>
+
+      <Gfx gfx="Gfx/Platforms/themes/rock/platformBlock.png" theme="rock" isBlock="true"/>
+      <Gfx gfx="Gfx/Platforms/themes/rock/platformPit.png" theme="rock" isPit="true"/>
+
+      <!-- Default theme -->
+      <Gfx gfx="Gfx/Platforms/themes/default/platformDefault.png" theme="default" probabilty="90"/>
+
+      <Gfx gfx="Gfx/Platforms/themes/default/platformDefaultBlock.png" theme="default" isBlock="true"/>
+      <Gfx gfx="Gfx/Platforms/themes/default/platformDefaultPit.png" theme="default" isPit="true"/>
+
+      <!-- Sand theme -->
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSand2.png" theme="sand" probabilty="10" />
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSand3.png" theme="sand" probabilty="10" />
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSand4.png" theme="sand" probabilty="10" />
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSand.png" theme="sand" probabilty="90"/>
+
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSandBlock.png" theme="sand" isBlock="true"/>
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSandPit.png" theme="sand" isPit="true"/>
+        <Gfx gfx="Gfx/Platforms/themes/sand/platformSandTeleport.png" theme="sand" isTeleport="true"/>
+
+
+      <!-- Stone theme -->
+      <Gfx gfx="Gfx/Platforms/themes/stone/platformStone.png" theme="stone" probabilty="100"/>
+      <Gfx gfx="Gfx/Platforms/themes/stone/platformStoneBlock.png" theme="stone" isBlock="true"/>
+      <Gfx gfx="Gfx/Platforms/themes/stone/platformStonePit.png" theme="stone" isPit="true"/>
+      <Gfx gfx="Gfx/Platforms/themes/stone/platformStoneTeleport.png" theme="stone" isTeleport="true"/>
+      <Gfx gfx="Gfx/Platforms/themes/stone/platformStonePressure.png" theme="stone" isPressurePlate="true"/>
+
+
+
+
+      <Gfx gfx="Gfx/Platforms/platformGreen.png" />
+        <Gfx gfx="Gfx/Platforms/platformOutline.png" />
+        <Gfx gfx="Gfx/Platforms/platformStone.png" />
+        <Gfx gfx="Gfx/Platforms/platformViolet.png" />
+        <Gfx gfx="Gfx/Platforms/platformError.png" />
+
+
+
+
+
+
+        <Gfx gfx="Gfx/Platforms/platform_Red.png" />
+        <Gfx gfx="Gfx/Platforms/platform_Green.png" />
+        <Gfx gfx="Gfx/Platforms/platform_Blue.png" />
+        <Gfx gfx="Gfx/Platforms/platform_Violet.png" />
+        <Gfx gfx="Gfx/Platforms/platformAlpha.png" />
+        <Gfx gfx="Gfx/Platforms/platformHO.png" />
+        <Gfx gfx="Gfx/Platforms/platformHOLight.png" />
+
+        <Gfx gfx="Gfx/Platforms/platformPA.png" />
+        <Gfx gfx="Gfx/Platforms/platformPB.png" />
+
+        <Gfx gfx="Gfx/Column.png" />
+
+        <!-- Gems -->
+        <Gfx gfx="Gem.png" />
+        <Gfx gfx="GemCrime.png" />
+        <Gfx gfx="GemGreen.png" />
+        <Gfx gfx="GemRed.png" />
+
+        <!-- Objects -->
+        <Gfx gfx="Gfx/Items/Barrel.png" />
+        <Gfx gfx="Gfx/Items/Bucket.png" />
+        <Gfx gfx="Gfx/Items/Cauldron.png" />
+        <Gfx gfx="Gfx/Items/Box.png" />
+        <Gfx gfx="Gfx/Items/Cap.png" />
+        <Gfx gfx="Gfx/Items/BooobakItem.png" />
+
+        <!-- Players -->
+        <Gfx gfx="Gfx/player.png" />
+
+        <!-- Monsters -->
+        <Gfx gfx="Gfx/Monsters/TreeFeeding.png" />
+        <Gfx gfx="Gfx/Monsters/TreeTough.png" />
+        <Gfx gfx="Gfx/Monsters/TreeDead.png" />
+        <Gfx gfx="Gfx/Monsters/Thuja.png" />
+        <Gfx gfx="Gfx/Monsters/Snowman.png" />
+        <Gfx gfx="Gfx/Monsters/BooobakMonster.png" />
+
+        <Gfx gfx="Bees.png" />
+        <Gfx gfx="Skeleton.png" />
+        <Gfx gfx="TestAnim.png" />
+
+        <!-- Interface -->
+        <Gfx gfx="Gfx/Interface/IsGamePaused.png" />
+
+        <Gfx gfx="Gfx/Interface/Interface_Box.png" />
+        <Gfx gfx="Gfx/Interface/Interface_Box2.png" />
+        <Gfx gfx="Gfx/Interface/Interface_Box3.png" />
+
+        <!-- Special coluns -->
+    </Gfxs>
+</CastlesConfiguration>
