@@ -1,0 +1,412 @@
+﻿<Level>
+  <Layers>
+    <Layer id="0">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="10" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="11" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="12" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="13" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="14" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="15" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="16" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="17" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="18" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="19" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="18" y="1" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="17" y="2" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="16" y="3" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="10" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="11" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="12" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="13" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="14" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="15" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="14" y="5" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="13" y="6" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="12" y="7" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="11" y="8" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="10" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="10" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="11" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="12" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-15" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="15" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-16" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-17" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="17" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-18" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="18" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-18" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-17" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-16" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-15" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="1">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="18" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="14" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="2">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="17" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="13" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="3">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="16" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="12" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="4">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="15" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="11" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="5">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="14" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="10" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="6">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="13" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="7">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="12" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="8">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="11" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="9">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="10" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="10">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="9" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="11">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="8" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="12">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="7" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="13">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="6" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="14">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="5" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="15">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="4" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="0" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-15" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="16">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="3" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-16" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="17">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="2" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-17" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="18">
+      <Platforms>
+        <Platform gfx="platform.png" x="0" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="1" y="0" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-1" y="1" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-2" y="2" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="3" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-4" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-3" y="4" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-5" y="5" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-6" y="6" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-7" y="7" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="8" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-9" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-8" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-10" y="10" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-11" y="11" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-12" y="12" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-14" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-13" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-15" y="15" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-16" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-17" y="17" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-18" y="18" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-19" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+        <Platform gfx="platform.png" x="-18" y="19" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
+      </Platforms>
+    </Layer>
+    <Layer id="19">
+      <Platforms />
+    </Layer>
+    <Layer id="20">
+      <Platforms />
+    </Layer>
+  </Layers>
+</Level>

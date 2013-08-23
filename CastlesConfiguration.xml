@@ -3,7 +3,7 @@
     <!-- Aktualni adresar, ze ktereho budou brana herni data -->
     <!-- Typicky v tomto pripade je mozne zvolit  moznost puvodni hry -->
     <!-- Ci nejake modifikace -->
-    <DataFolder>../../../Data2/</DataFolder>
+    <DataFolder>../../Game/Data/</DataFolder>
 
     <!-- Dojde k automatickemu prenahravani levelovych souboru, tak aby byly hned videt zmeny na obrazovce -->
     <!-- Ve vysledku toto musi byt nastavene na false -->

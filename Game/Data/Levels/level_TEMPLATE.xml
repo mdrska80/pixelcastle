@@ -1,0 +1,37 @@
+﻿<Level name="Template level">
+  <Platforms>
+
+    <!-- type -->
+    <!-- :Column, platform on layer 20, will appear as column of 20 platforms -->
+    <!-- :Platform, not implemented yet -->
+    <!-- :Custom, custom columns, graphics. -->
+
+    <!-- ColumnHeight -->
+    <!-- if layer is 20 and column height is 10, then the column will be not 20 platforms height but only 10 -->
+
+    <!-- contains -->
+    <!-- Definition of the objects on the platform -->
+    <!-- :gem - gem on the platforms -->
+    <!-- :cauldron - cauldron on the platform -->
+    <!-- :bbk - booobak item on the platform -->
+
+    <!-- monsterCanPass - Passable by monster -->
+    <!-- playerCanPass - Passable by player -->
+
+    <!-- Layer - platform height -->
+    <Platform gfx="platformHO.png" x="-10" y="23" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-6" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-7" y="10" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-4" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-3" y="13" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-4" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+  </Platforms>
+  <EntityDefs>
+    <EntityDef X="-10" Y="23" Layer="0" ET="TreeFeeding" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-6" Y="14" Layer="0" ET="TreeTough" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-7" Y="10" Layer="0" ET="TestMob" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="8" Layer="0" ET="TreeDead" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-3" Y="13" Layer="0" ET="Thuja" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="14" Layer="0" ET="Snowman" ShiftX="0" ShiftY="0" />
+  </EntityDefs>
+</Level>

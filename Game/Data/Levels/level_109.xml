@@ -1,0 +1,223 @@
+<!--
+
+Level
+=====
+goals = not defined at this moment. This will be used to trigger alternative level ending
+name = Level name, which will be visible on the game board.
+theme = Level name, which will be visible on the game board.
+
+Platform
+========
+gfx = for custom GFX on specific platform
+x = x
+y = y
+type = platform type (Column, Custom)
+ColumnHeight = if u do not want column up do total down. So how many platforms from up will be drawn.
+ShiftX = gfx shiftX
+ShiftY = gfx shiftY
+contains = what can be placed on platform, most common will be gem
+monsterCannotPass = block platform for Monsters
+playerCannotPass = block platform for player
+isPit = pit
+layer = layer
+-->
+
+<Level name="Template level" theme="stone">
+  <Platforms>
+    <Platform x="1" y="1" type="Column" layer="6" />
+    <Platform x="2" y="1" type="Column" layer="6" />
+    <Platform x="3" y="1" type="Column" layer="7" />
+    <Platform x="4" y="1" type="Column" layer="8" />
+    <Platform x="5" y="1" type="Column" layer="9" />
+    <Platform x="6" y="1" type="Column" layer="10" />
+    <Platform x="7" y="1" type="Column" layer="11" />
+    <Platform x="8" y="1" type="Column" layer="12" />
+    <Platform x="9" y="1" type="Column" layer="12" />
+    <Platform x="10" y="1" type="Column" layer="12" />
+    <Platform x="11" y="1" type="Column" layer="12" />
+    <Platform x="12" y="1" type="Column" layer="12" />
+    <Platform x="13" y="1" type="Column" layer="12" />
+    <Platform x="14" y="1" type="Column" layer="13" />
+    <Platform x="0" y="2" type="Column" layer="5" />
+    <Platform x="2" y="2" type="Column" layer="1" />
+    <Platform x="3" y="2" type="Column" layer="1" />
+    <Platform x="13" y="2" type="Column" layer="14" />
+    <Platform x="-1" y="3" type="Column" layer="4" />
+    <Platform x="2" y="3" type="Column" layer="1" />
+    <Platform x="12" y="3" type="Column" layer="15" />
+    <Platform x="-2" y="4" type="Column" layer="4" />
+    <Platform x="1" y="4" type="Column" layer="0" />
+    <Platform x="2" y="4" type="Column" layer="0" />
+    <Platform x="3" y="4" type="Column" layer="1" />
+    <Platform x="4" y="4" type="Column" layer="2" />
+    <Platform x="11" y="4" type="Column" layer="16" />
+    <Platform x="-3" y="5" type="Column" layer="4" />
+    <Platform x="3" y="5" type="Column" layer="2" />
+    <Platform x="4" y="5" type="Column" layer="3" />
+    <Platform x="5" y="5" type="Column" layer="3" />
+    <Platform x="6" y="5" type="Column" layer="3" />
+    <Platform x="7" y="5" type="Column" layer="3" />
+    <Platform x="10" y="5" type="Column" ColumnHeight="1" layer="16" />
+    <Platform x="10" y="5" type="Column" layer="6" />
+    <Platform x="-4" y="6" type="Column" layer="3" />
+    <Platform x="-1" y="6" type="Column" layer="2" />
+    <Platform x="0" y="6" type="Column" layer="2" />
+    <Platform x="1" y="6" type="Column" layer="2" />
+    <Platform x="2" y="6" type="Column" layer="2" />
+    <Platform x="6" y="6" type="Column" layer="3" />
+    <Platform x="7" y="6" type="Column" layer="4" />
+    <Platform x="8" y="6" type="Column" layer="5" />
+    <Platform x="9" y="6" type="Column" ColumnHeight="1" layer="16" />
+    <Platform x="9" y="6" type="Column" layer="6" />
+    <Platform x="10" y="6" type="Column" layer="6" />
+    <Platform x="11" y="6" type="Column" layer="6" />
+    <Platform x="12" y="6" type="Column" layer="6" />
+    <Platform x="-5" y="7" type="Column" layer="2" />
+    <Platform x="-2" y="7" type="Column" layer="1" />
+    <Platform x="5" y="7" type="Column" layer="3" />
+    <Platform x="8" y="7" type="Column" layer="16" />
+    <Platform x="11" y="7" type="Column" layer="6" />
+    <Platform x="-6" y="8" type="Column" layer="1" />
+    <Platform x="-5" y="8" type="Column" layer="1" />
+    <Platform x="-3" y="8" type="Column" layer="0" />
+    <Platform x="4" y="8" type="Column" layer="3" />
+    <Platform x="7" y="8" type="Column" layer="15" />
+    <Platform x="10" y="8" type="Column" layer="5" />
+    <Platform x="12" y="8" type="Column" layer="4" />
+    <Platform x="13" y="8" type="Column" layer="4" />
+    <Platform x="-6" y="9" type="Column" layer="0" />
+    <Platform x="-5" y="9" type="Column" layer="0" />
+    <Platform x="-4" y="9" type="Column" layer="0" />
+    <Platform x="6" y="9" type="Column" layer="14" />
+    <Platform x="9" y="9" type="Column" layer="5" />
+    <Platform x="11" y="9" type="Column" layer="4" />
+    <Platform x="12" y="9" type="Column" layer="4" />
+    <Platform x="-8" y="10" type="Column" ColumnHeight="3" layer="10" />
+    <Platform x="-7" y="10" type="Column" layer="0" />
+    <Platform x="-5" y="10" type="Column" layer="0" />
+    <Platform x="3" y="10" type="Column" layer="0">
+      <elevator Low="0" High="24" Current="18" Direction="up" />
+    </Platform>
+    <Platform x="4" y="10" type="Column" layer="24" />
+    <Platform x="5" y="10" type="Column" layer="0">
+      <elevator Low="0" High="24" Current="18" Direction="up" />
+    </Platform>
+    <Platform x="8" y="10" type="Column" layer="4" />
+    <Platform x="9" y="10" type="Column" layer="3" />
+    <Platform x="10" y="10" type="Column" layer="4" />
+    <Platform x="11" y="10" type="Column" layer="4" />
+    <Platform x="-16" y="11" type="Column" layer="0" />
+    <Platform x="-15" y="11" type="Column" layer="0" />
+    <Platform x="-14" y="11" type="Column" layer="0" />
+    <Platform x="-9" y="11" type="Column" layer="0" />
+    <Platform x="-8" y="11" type="Column" layer="0" />
+    <Platform x="-6" y="11" type="Column" layer="0" />
+    <Platform x="-5" y="11" type="Column" layer="0" />
+    <Platform x="-4" y="11" type="Column" layer="0" />
+    <Platform x="-3" y="11" type="Column" layer="0" />
+    <Platform x="-2" y="11" type="Column" layer="0" />
+    <Platform x="-1" y="11" type="Column" layer="0" />
+    <Platform x="0" y="11" type="Column" layer="1" />
+    <Platform x="1" y="11" type="Column" layer="0" />
+    <Platform x="2" y="11" type="Column" layer="0" />
+    <Platform x="4" y="11" type="Column" layer="0" />
+    <Platform x="7" y="11" type="Column" layer="4" />
+    <Platform x="-11" y="12" type="Column" layer="0" />
+    <Platform x="-10" y="12" type="Column" layer="0" />
+    <Platform x="-9" y="12" type="Column" layer="0" />
+    <Platform x="-5" y="12" type="Column" layer="0" />
+    <Platform x="-4" y="12" type="Column" layer="0" />
+    <Platform x="-3" y="12" type="Column" layer="0" />
+    <Platform x="-2" y="12" type="Column" layer="0" />
+    <Platform x="-1" y="12" type="Column" layer="0" />
+    <Platform x="3" y="12" type="Column" layer="0" />
+    <Platform x="6" y="12" type="Column" layer="3" />
+    <Platform x="-12" y="13" type="Column" layer="1" />
+    <Platform x="-6" y="13" type="Column" layer="0" />
+    <Platform x="-5" y="13" type="Column" layer="0" />
+    <Platform x="-4" y="13" type="Column" layer="0" />
+    <Platform x="-3" y="13" type="Column" layer="0" />
+    <Platform x="-2" y="13" type="Column" layer="0" />
+    <Platform x="2" y="13" type="Column" layer="0" />
+    <Platform x="5" y="13" type="Column" layer="2" />
+    <Platform x="-13" y="14" type="Column" layer="1" />
+    <Platform x="-7" y="14" type="Column" layer="0" />
+    <Platform x="-6" y="14" type="Column" layer="0" />
+    <Platform x="-5" y="14" type="Column" layer="0" />
+    <Platform x="-4" y="14" type="Column" layer="0" />
+    <Platform x="-3" y="14" type="Column" layer="0" />
+    <Platform x="-2" y="14" type="Column" layer="0" />
+
+    <Platform x="-1" y="14" type="Column" contains="" layer="0" >
+        <action Name="CustomAction" Param1="24" />
+    </Platform>
+
+    <Platform x="0" y="14" type="Column" layer="0" />
+    <Platform x="1" y="14" type="Column" layer="0" />
+    <Platform x="2" y="14" type="Column" layer="0" />
+    <Platform x="3" y="14" type="Column" layer="0" />
+    <Platform x="4" y="14" type="Column" layer="1" />
+    <Platform x="5" y="14" type="Column" layer="1" />
+    <Platform x="6" y="14" type="Column" layer="2" />
+    <Platform x="-14" y="15" type="Column" layer="1" />
+    <Platform x="-8" y="15" type="Column" layer="0" />
+    <Platform x="-7" y="15" type="Column" layer="0" />
+    <Platform x="-6" y="15" type="Column" layer="0" />
+    <Platform x="-5" y="15" type="Column" layer="0" />
+    <Platform x="-4" y="15" type="Column" layer="0" />
+    <Platform x="1" y="15" type="Column" layer="0" />
+    <Platform x="-15" y="16" type="Column" layer="1" />
+    <Platform x="-14" y="16" type="Column" layer="1" />
+    <Platform x="-13" y="16" type="Column" layer="1" />
+    <Platform x="-12" y="16" type="Column" layer="1" />
+    <Platform x="-11" y="16" type="Column" layer="1" />
+    <Platform x="-10" y="16" type="Column" layer="0" />
+    <Platform x="-9" y="16" type="Column" layer="1" />
+    <Platform x="-8" y="16" type="Column" layer="0" />
+    <Platform x="-7" y="16" type="Column" layer="0" />
+    <Platform x="-6" y="16" type="Column" layer="0" />
+    <Platform x="-5" y="16" type="Column" layer="0" />
+    <Platform x="0" y="16" type="Column" layer="0" />
+    <Platform x="-6" y="17" type="Column" layer="0" />
+    <Platform x="-1" y="17" type="Column" layer="0" />
+    <Platform x="0" y="17" type="Column" layer="0" />
+    <Platform x="1" y="17" type="Column" layer="0" />
+    <Platform x="-7" y="18" type="Column" layer="0" />
+    <Platform x="-2" y="18" type="Column" layer="0" />
+    <Platform x="0" y="18" type="Column" layer="0" />
+    <Platform x="-15" y="19" type="Column" layer="0" />
+    <Platform x="-14" y="19" type="Column" layer="0" />
+    <Platform x="-13" y="19" type="Column" layer="0" />
+    <Platform x="-12" y="19" type="Column" layer="0" />
+    <Platform x="-8" y="19" type="Column" layer="0" />
+    <Platform x="-3" y="19" type="Column" layer="0" />
+    <Platform x="-1" y="19" type="Column" layer="0" />
+    <Platform x="-16" y="20" type="Column" layer="0" />
+    <Platform x="-15" y="20" type="Column" layer="0" />
+    <Platform x="-14" y="20" type="Column" layer="0" />
+    <Platform x="-13" y="20" type="Column" layer="0" />
+    <Platform x="-9" y="20" type="Column" layer="0" />
+    <Platform x="-2" y="20" type="Column" layer="0" />
+    <Platform x="-17" y="21" type="Column" layer="0" />
+    <Platform x="-16" y="21" type="Column" layer="0" />
+    <Platform x="-15" y="21" type="Column" layer="0" />
+    <Platform x="-14" y="21" type="Column" layer="0" />
+    <Platform x="-10" y="21" type="Column" layer="1" />
+    <Platform x="-8" y="21" type="Column" playerCannotPass="true" layer="5" />
+    <Platform x="-7" y="21" type="Column" playerCannotPass="true" layer="4" />
+    <Platform x="-6" y="21" type="Column" layer="3" />
+    <Platform x="-5" y="21" type="Column" layer="2" />
+    <Platform x="-4" y="21" type="Column" layer="1" />
+    <Platform x="-3" y="21" type="Column" layer="0" />
+    <Platform x="-11" y="22" type="Column" layer="2" />
+    <Platform x="-9" y="22" type="Column" layer="0" />
+    <Platform x="-12" y="23" type="Column" layer="3" />
+    <Platform x="-10" y="23" type="Column" layer="0" />
+    <Platform x="-13" y="24" type="Column" layer="1" />
+    <Platform x="-12" y="24" type="Column" layer="0" />
+    <Platform x="-11" y="24" type="Column" layer="0" isPressurePlate="true" />
+  </Platforms>
+  <EntityDefs>
+    <EntityDef X="1" Y="17" Layer="0" ET="Player" Class="Castles.Player" />
+  </EntityDefs>
+</Level>

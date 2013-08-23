@@ -1,0 +1,28 @@
+﻿<Level name="Template level" theme="platformStone.png">
+  <Platforms>
+    <Platform x="-5" y="2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-4" y="2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform x="-3" y="2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="2" />
+    <Platform x="-10" y="7" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-11" y="8" type="Column" ColumnHeight="3" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0">
+      <elevator Low="0" High="10" Current="1" Direction="up" />
+    </Platform>
+    <Platform x="-4" y="8" type="Column" ColumnHeight="3" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="10" />
+    <Platform x="-12" y="9" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-7" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-3" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-6" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-4" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform x="-10" y="23" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0">
+      <elevator Low="0" High="10" Current="9" Direction="down" />
+    </Platform>
+  </Platforms>
+  <EntityDefs>
+    <EntityDef X="-10" Y="23" Layer="0" ET="TreeFeeding" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-6" Y="14" Layer="0" ET="TreeTough" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-7" Y="10" Layer="0" ET="TestMob" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="8" Layer="0" ET="TreeDead" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-3" Y="13" Layer="0" ET="Thuja" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="14" Layer="0" ET="Snowman" ShiftX="0" ShiftY="0" />
+  </EntityDefs>
+</Level>

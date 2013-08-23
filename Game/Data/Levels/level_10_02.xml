@@ -1,0 +1,110 @@
+﻿<Level>
+  <Platforms>
+    <Platform gfx="platformHO.png" x="0" y="-9" type="Column" ColumnHeight="0" contains="bbk" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="-6" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-8" y="-4" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="-3" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-8" y="-2" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-1" y="0" type="Column" ColumnHeight="5" contains="" monsterCanPass="true" playerCanPass="true" layer="19" />
+    <Platform gfx="platformHO.png" x="-1" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="5" />
+    <Platform gfx="platformHO.png" x="0" y="0" type="Column" ColumnHeight="0" contains="," monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="1" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="2" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="3" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="4" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="5" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="6" y="0" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="7" y="0" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="16" />
+    <Platform gfx="platformHO.png" x="8" y="0" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="9" y="0" type="Column" ColumnHeight="0" contains=",,,gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="10" y="0" type="Column" ColumnHeight="0" contains=",,,gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="11" y="0" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="0" y="1" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="2" />
+    <Platform gfx="platformHO.png" x="0" y="1" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="1" y="1" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="4" y="1" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="6" />
+    <Platform gfx="platformHO.png" x="5" y="1" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="4" y="2" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="5" y="2" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="5" />
+    <Platform gfx="platformHO.png" x="3" y="3" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="2" y="4" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="1" y="5" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-20" y="6" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="0" y="6" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-1" y="7" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-4" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="3" />
+    <Platform gfx="platformHO.png" x="-3" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-2" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-1" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="3" />
+    <Platform gfx="platformHO.png" x="0" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="1" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="2" y="8" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-5" y="9" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-4" y="9" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="4" y="9" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-7" y="10" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-6" y="10" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="10" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-4" y="10" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="11" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-4" y="11" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-3" y="11" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-2" y="11" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-1" y="11" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-2" y="12" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-3" y="13" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-11" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="8" />
+    <Platform gfx="platformHO.png" x="-7" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-6" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-4" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-3" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-2" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-1" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="0" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="1" y="14" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-8" y="15" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-5" y="15" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platformHO.png" x="-3" y="15" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="0" y="15" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-17" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-16" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-15" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-14" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-13" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-12" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-11" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-10" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-9" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-6" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="2" />
+    <Platform gfx="platformHO.png" x="-4" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-3" y="16" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-13" y="17" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-15" y="18" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-14" y="18" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="16" />
+    <Platform gfx="platformHO.png" x="-13" y="18" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-15" y="19" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-7" y="20" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-2" y="20" type="Column" ColumnHeight="0" contains="bbk" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-8" y="21" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-9" y="22" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-13" y="23" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-12" y="23" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-11" y="23" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-10" y="23" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-9" y="23" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-8" y="23" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-7" y="23" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-11" y="24" type="Column" ColumnHeight="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-12" y="25" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platformHO.png" x="-13" y="26" type="Column" ColumnHeight="0" contains=",gem" monsterCanPass="true" playerCanPass="true" layer="0" />
+  </Platforms>
+  <EntityDefs>
+    <EntityDef X="-10" Y="23" Layer="0" ET="TreeFeeding" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-6" Y="14" Layer="0" ET="TreeTough" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-7" Y="10" Layer="0" ET="TestMob" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="8" Layer="0" ET="TreeDead" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-3" Y="13" Layer="0" ET="Thuja" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="14" Layer="0" ET="Snowman" ShiftX="0" ShiftY="0" />
+  </EntityDefs>
+</Level>

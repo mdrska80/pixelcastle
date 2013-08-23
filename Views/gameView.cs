@@ -135,26 +135,26 @@ namespace Castles
 
 
 
-		    if (i == 1)
-		    {
-                DirectoryInfo di = new DirectoryInfo(Path.Combine(CastlesConfigurationReader.GetConfiguration().DataFolder, "Screenshots"));
+            //if (i == 1)
+            //{
+            //    DirectoryInfo di = new DirectoryInfo(Path.Combine(CastlesConfigurationReader.GetConfiguration().DataFolder, "Screenshots"));
 
-		        if (di.Exists)
-		        {
-		            FileInfo[] fi = di.GetFiles();
-		            surf.SaveBmp(Path.Combine(CastlesConfigurationReader.GetConfiguration().DataFolder,
-		                                      string.Format("Screenshots/shot{0}.bmp", fi.GetLength(0))));
-		        }
+            //    if (di.Exists)
+            //    {
+            //        FileInfo[] fi = di.GetFiles();
+            //        surf.SaveBmp(Path.Combine(CastlesConfigurationReader.GetConfiguration().DataFolder,
+            //                                  string.Format("Screenshots/shot{0}.bmp", fi.GetLength(0))));
+            //    }
 
-                i = 2;
-            }
+            //    i = 2;
+            //}
 
 		    // blit
 			Video.Screen.Blit(surf);
 			Video.Screen.Update();
 		}
 
-	    private int i = 1;
+	    //private int i = 1;
 
 		float lastTime = 0;
 		private void Tick(object sender, TickEventArgs e)

@@ -1,0 +1,114 @@
+﻿<Level name="Zoo">
+  <Platforms>
+    <Platform gfx="platform.png" x="-3" y="-4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-2" y="-4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-1" y="-4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="0" y="-4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="1" y="-4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-3" y="-3" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="0" y="-3" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-4" y="-2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-1" y="-2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="0" y="-2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="1" y="-2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="2" y="-2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-5" y="-1" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="1" y="-1" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-6" y="0" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="0" y="0" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-7" y="1" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="2" />
+    <Platform gfx="platform.png" x="-1" y="1" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="-8" y="2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="3" />
+    <Platform gfx="platform.png" x="-2" y="2" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="-9" y="3" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="4" />
+    <Platform gfx="platform.png" x="-3" y="3" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-10" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="5" />
+    <Platform gfx="platform.png" x="-4" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-3" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-2" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="-1" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="0" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="1" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="2" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="3" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="4" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="5" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="6" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="7" y="4" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="-11" y="5" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="6" />
+    <Platform gfx="platform.png" x="-5" y="5" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="6" y="5" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-12" y="6" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="7" />
+    <Platform gfx="platform.png" x="-6" y="6" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="5" y="6" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-13" y="7" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="8" />
+    <Platform gfx="platform.png" x="-7" y="7" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="4" y="7" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-14" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="9" />
+    <Platform gfx="platform.png" x="-8" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-7" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-4" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-3" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-2" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-1" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="0" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="1" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="2" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="3" y="8" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-15" y="9" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="10" />
+    <Platform gfx="platform.png" x="-8" y="9" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-5" y="9" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-16" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="11" />
+    <Platform gfx="platform.png" x="-9" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-8" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-7" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-6" y="10" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-17" y="11" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="10" />
+    <Platform gfx="platform.png" x="-10" y="11" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-7" y="11" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-18" y="12" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="9" />
+    <Platform gfx="platform.png" x="-11" y="12" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-8" y="12" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-19" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="8" />
+    <Platform gfx="platform.png" x="-18" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="7" />
+    <Platform gfx="platform.png" x="-17" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="6" />
+    <Platform gfx="platform.png" x="-16" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="5" />
+    <Platform gfx="platform.png" x="-15" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="4" />
+    <Platform gfx="platform.png" x="-14" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-13" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-12" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-9" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-5" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-4" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-3" y="13" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-16" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="3" />
+    <Platform gfx="platform.png" x="-13" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-10" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-6" y="14" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-17" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="2" />
+    <Platform gfx="platform.png" x="-16" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="1" />
+    <Platform gfx="platform.png" x="-15" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-14" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-11" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-7" y="15" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-15" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-14" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-13" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-12" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-11" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-10" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-9" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-8" y="16" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-16" y="17" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+    <Platform gfx="platform.png" x="-17" y="18" type="Column" ColumnHeight="0" ShiftX="0" ShiftY="0" contains="" monsterCanPass="true" playerCanPass="true" layer="0" />
+  </Platforms>
+  <EntityDefs>
+    <EntityDef X="-3" Y="-4" Layer="0" ET="TreeFeeding" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-6" Y="14" Layer="0" ET="TreeTough" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-7" Y="10" Layer="0" ET="TestMob" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-4" Y="8" Layer="0" ET="TreeDead" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-3" Y="13" Layer="0" ET="Thuja" ShiftX="0" ShiftY="0" />
+    <EntityDef X="6" Y="5" Layer="0" ET="Snowman" ShiftX="0" ShiftY="0" />
+    <EntityDef X="-14" Y="16" Layer="0" ET="Player" ShiftX="0" ShiftY="0" Class="Castles.Player" />
+  </EntityDefs>
+</Level>
