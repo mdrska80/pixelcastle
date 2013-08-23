@@ -64,7 +64,6 @@ namespace Castles
 
             screenManager.StartNewGame();
 
-
             // set initial screen
             screenManager.StartEditor();
         }
