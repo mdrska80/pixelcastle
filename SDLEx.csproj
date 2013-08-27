@@ -43,7 +43,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="SdlDotNet">
-      <HintPath>..\SDL\SdlDotNet.dll</HintPath>
+      <HintPath>_references\SdlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cairo" />
   </ItemGroup>
