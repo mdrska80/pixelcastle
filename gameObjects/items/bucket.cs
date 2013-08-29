@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Castles.gameObjects.items
 {
-    public class Bucket : Item
+    public class Bucket : WallItem
     {
     }
 }

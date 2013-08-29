@@ -99,4 +99,10 @@ namespace Castles
         VerySlow = 75,
         Static = 999
     }
+
+    public enum WallItemPosition
+    {
+        left  = 1,
+        up = 2
+    }
 }

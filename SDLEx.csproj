@@ -53,10 +53,12 @@
     <Compile Include="actions\action_togglePlatform.cs" />
     <Compile Include="actions\action_warp.cs" />
     <Compile Include="gameObjects\items\barrel.cs" />
+    <Compile Include="gameObjects\items\base\wallitem.cs" />
     <Compile Include="gameObjects\items\bucket.cs" />
     <Compile Include="gameObjects\items\doubleGem.cs">
       <DependentUpon>gem.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameObjects\items\lever.cs" />
     <Compile Include="gameObjects\items\trippleGem.cs">
       <DependentUpon>gem.cs</DependentUpon>
     </Compile>
@@ -80,7 +82,7 @@
     <Compile Include="gameObjects\level\moving.cs" />
     <Compile Include="gameObjects\level\platform.cs" />
     <!-- ingame items -->
-    <Compile Include="gameObjects\items\item.cs" />
+    <Compile Include="gameObjects\items\base\item.cs" />
     <Compile Include="gameObjects\items\honeyCauldron.cs" />
     <Compile Include="gameObjects\items\magicCap.cs" />
     <Compile Include="gameObjects\items\gem.cs" />
