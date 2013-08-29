@@ -53,26 +53,33 @@ namespace Castles
 		/// </summary>
 		public void CreateView(Game g)
 		{
-			game = g;
-			//screen = Video.SetVideoMode(1024, 768);
-			Video.WindowIcon();
-			Video.WindowCaption = resourceManager.Texts["WINDOW_CAPTION"];
-			Video.SetVideoMode(1024,768);//, false, false, false, true, true);
+			try
+			{
+				game = g;
+				//screen = Video.SetVideoMode(1024, 768);
+				Video.WindowIcon();
+				Video.WindowCaption = resourceManager.Texts["WINDOW_CAPTION"];
+				Video.SetVideoMode(1024,768);//, false, false, false, true, true);
 
-			this.surf = Video.Screen.CreateCompatibleSurface();
+				this.surf = Video.Screen.CreateCompatibleSurface();
 
-			//fill the surface with black
-			//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Red);
-			Mouse.ShowCursor = false;
+				//fill the surface with black
+				//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Red);
+				Mouse.ShowCursor = false;
 
-			interfaceView = new interfaceView(new Point(0,0));
-			levelView = new levelView(Game.I.boardOrigin);
+				interfaceView = new interfaceView(new Point(0,0));
+				levelView = new levelView(Game.I.boardOrigin);
 
-			backgroundView = new backgroundView(new Point(0,0));
-			debugView = new debugView(new Point(0, 0));
-			editorView = new editorView(new Point(0, 0));
+				backgroundView = new backgroundView(new Point(0,0));
+				debugView = new debugView(new Point(0, 0));
+				editorView = new editorView(new Point(0, 0));
 
-            gameoverView = new gameoverView(new Point(0,0));
+	            gameoverView = new gameoverView(new Point(0,0));
+			}
+			catch(Exception ex)
+			{
+				Console.WriteLine(ex);
+			}
 		}  
 		
 		/// <summary>
@@ -83,6 +90,8 @@ namespace Castles
 			//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Black);
 
 			Game.I.surfaces = 0;
+
+			if (surf == null) return; //nothing to update
 
 		    switch (Game.I.Screen)
 		    {
@@ -159,15 +168,18 @@ namespace Castles
 		float lastTime = 0;
 		private void Tick(object sender, TickEventArgs e)
 		{
-			float time = Timer.TicksElapsed;
-			if (time - lastTime > 50) //every second, update game objects
+			if (game != null)
 			{
-				//thread?
-				UpdateGameObjects();
-				lastTime = Timer.TicksElapsed;
-			}
+				float time = Timer.TicksElapsed;
+				if (time - lastTime > 50) //every second, update game objects
+				{
+					//thread?
+					UpdateGameObjects();
+					lastTime = Timer.TicksElapsed;
+				}
 
-			UpdateView();
+				UpdateView();
+			}
 		}
 
 		private void UpdateGameObjects()
@@ -186,7 +198,8 @@ namespace Castles
                         // Update monster positions
                         foreach (Monster m in Game.I.level.Monsters)
                         {
-                            m.Update();
+							if (m!=null)
+                            	m.Update();
                         }
                     }
 
