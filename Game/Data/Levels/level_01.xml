@@ -1,221 +1,96 @@
-﻿<Level>
+<!--
+
+Level
+=====
+goals = not defined at this moment. This will be used to trigger alternative level ending
+name = Level name, which will be visible on the game board.
+theme = Level name, which will be visible on the game board.
+
+Platform
+========
+gfx = for custom GFX on specific platform
+x = x
+y = y
+type = platform type (Column, Custom)
+ColumnHeight = if u do not want column up do total down. So how many platforms from up will be drawn.
+ShiftX = gfx shiftX
+ShiftY = gfx shiftY
+contains = what can be placed on platform, most common will be gem
+monsterCannotPass = block platform for Monsters
+playerCannotPass = block platform for player
+isPit = pit
+layer = layer
+-->
+
+<Level theme="stone">
   <Dimension X="20" Y="20" />
-  <Layers>
-    <Layer id="0">
-      <Platforms>
-        <Platform gfx="platform.png" x="20" y="-12" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="29" y="0" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="6" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="7" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="8" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="9" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="10" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="11" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="12" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="13" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="15" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="16" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="17" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="18" y="1" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="17" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="16" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="15" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="13" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-6" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="6" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="7" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="8" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="9" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="10" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="11" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="12" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-7" y="8" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="11" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-8" y="9" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="10" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-9" y="10" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="10" type="normal" contains=",,gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="10" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="9" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-10" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="8" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-11" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="7" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-12" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-6" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="6" y="13" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-13" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-7" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="14" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-8" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="15" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="15" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-15" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-9" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="16" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-16" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-10" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="17" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-17" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-11" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="18" type="normal" contains=",gem" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-18" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-17" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-16" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-15" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-13" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-12" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-11" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-10" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-9" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-8" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-7" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-6" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="19" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-      </Platforms>
-    </Layer>
-    <Layer id="1">
-      <Platforms>
-        <Platform gfx="platform.png" x="16" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="15" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="13" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="6" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="7" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="8" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="9" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="10" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="11" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="12" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-6" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-7" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-8" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-9" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-10" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-11" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-16" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-15" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-13" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-12" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-      </Platforms>
-    </Layer>
-    <Layer id="2">
-      <Platforms>
-        <Platform gfx="platform.png" x="15" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="16" y="2" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="15" y="3" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="13" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="14" y="4" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="12" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="13" y="5" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="0" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="1" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="2" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="3" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="4" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="5" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="6" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="7" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="8" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="9" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="10" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="11" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="12" y="6" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-1" y="7" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-2" y="8" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-3" y="9" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-4" y="10" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-5" y="11" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-6" y="12" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-7" y="13" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-8" y="14" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-9" y="15" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-10" y="16" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-15" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-13" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-12" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-11" y="17" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-16" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-15" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-14" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-13" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-        <Platform gfx="platform.png" x="-12" y="18" type="normal" contains="" monsterCanPass="true" playerCanPass="true" />
-      </Platforms>
-    </Layer>
-  </Layers>
+  <Platforms>
+    <Platform x="9" y="-1" type="Column" layer="10" />
+    <Platform x="10" y="-1" type="Column" layer="10" />
+    <Platform x="7" y="0" type="Column" layer="10" />
+    <Platform x="8" y="0" type="Column" layer="0" />
+    <Platform x="9" y="0" type="Column" layer="10" />
+    <Platform x="10" y="0" type="Column" layer="10" />
+    <Platform x="11" y="0" type="Column" layer="10" />
+    <Platform x="12" y="0" type="Column" layer="10" />
+    <Platform x="13" y="0" type="Column" layer="10" />
+    <Platform x="14" y="0" type="Column" layer="10" />
+    <Platform x="6" y="1" type="Column" layer="10" />
+    <Platform x="7" y="1" type="Column" layer="0" />
+    <Platform x="8" y="1" type="Column" layer="0" />
+    <Platform x="9" y="1" type="Column" layer="0" />
+    <Platform x="10" y="1" type="Column" layer="0" />
+    <Platform x="11" y="1" type="Column" layer="0" />
+    <Platform x="12" y="1" type="Column" layer="0" />
+    <Platform x="13" y="1" type="Column" layer="0" />
+    <Platform x="1" y="2" type="Column" layer="10" />
+    <Platform x="2" y="2" type="Column" layer="10" />
+    <Platform x="3" y="2" type="Column" layer="10" />
+    <Platform x="4" y="2" type="Column" layer="10" />
+    <Platform x="5" y="2" type="Column" layer="10" />
+    <Platform x="6" y="2" type="Column" layer="0" />
+    <Platform x="0" y="3" type="Column" layer="10" />
+    <Platform x="1" y="3" type="Column" layer="0" />
+    <Platform x="2" y="3" type="Column" layer="0" />
+    <Platform x="3" y="3" type="Column" layer="0" />
+    <Platform x="4" y="3" type="Column" layer="0" />
+    <Platform x="5" y="3" type="Column" layer="0" />
+    <Platform x="-1" y="4" type="Column" layer="10" />
+    <Platform x="0" y="4" type="Column" layer="0" />
+    <Platform x="1" y="4" type="Column" layer="0" />
+    <Platform x="2" y="4" type="Column" layer="0" />
+    <Platform x="3" y="4" type="Column" layer="0" />
+    <Platform x="4" y="4" type="Column" layer="0" />
+    <Platform x="5" y="4" type="Column" layer="0" />
+    <Platform x="-4" y="5" type="Column" layer="10" />
+    <Platform x="-3" y="5" type="Column" layer="10" />
+    <Platform x="-2" y="5" type="Column" layer="10" />
+    <Platform x="-1" y="5" type="Column" layer="0" />
+    <Platform x="0" y="5" type="Column" layer="0" />
+    <Platform x="1" y="5" type="Column" layer="0" />
+    <Platform x="2" y="5" type="Column" layer="0" />
+    <Platform x="3" y="5" type="Column" layer="0" />
+    <Platform x="4" y="5" type="Column" layer="0" />
+    <Platform x="-6" y="6" type="Column" layer="10" />
+    <Platform x="-5" y="6" type="Column" layer="0" />
+    <Platform x="-4" y="6" type="Column" layer="0" />
+    <Platform x="-3" y="6" type="Column" layer="0" />
+    <Platform x="-2" y="6" type="Column" layer="0" />
+    <Platform x="-1" y="6" type="Column" layer="0" />
+    <Platform x="0" y="6" type="Column" layer="0" />
+    <Platform x="1" y="6" type="Column" layer="0" />
+    <Platform x="2" y="6" type="Column" layer="0" />
+    <Platform x="-5" y="7" type="Column" layer="0" />
+    <Platform x="-6" y="8" type="Column" layer="0" />
+    <Platform x="-5" y="8" type="Column" layer="0" />
+    <Platform x="-4" y="8" type="Column" layer="0" />
+    <Platform x="-3" y="8" type="Column" layer="0" />
+    <Platform x="-4" y="9" type="Column" layer="0" />
+    <Platform x="-8" y="10" type="Column" layer="0" />
+    <Platform x="-7" y="10" type="Column" layer="0" />
+    <Platform x="-6" y="10" type="Column" layer="0" />
+    <Platform x="-5" y="10" type="Column" layer="0" />
+    <Platform x="-8" y="11" type="Column" layer="0" />
+  </Platforms>
+  <EntityDefs />
 </Level>

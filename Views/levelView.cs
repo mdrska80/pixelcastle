@@ -38,10 +38,7 @@ namespace Castles.Views
         public List<Surface> sColumnsTeleports { get; set; }
         public List<Surface> sColumnsPressures { get; set; }
 
-
         public Theme t { get; set; }
-
-
 
         public levelView(Point origin) : base(origin)
         {

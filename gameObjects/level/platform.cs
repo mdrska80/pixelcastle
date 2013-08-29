@@ -58,7 +58,12 @@ namespace Castles
 		public Generator generator {get;set;}
 		public Action action {get;set;}
 
-		[XmlIgnore]
+        /// <summary>
+        /// Object for door
+        /// </summary>
+        public Door door { get; set; }
+
+        [XmlIgnore]
 		public bool isHighLighted { get; set; }
 
 		[XmlIgnore] 

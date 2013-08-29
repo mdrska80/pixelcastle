@@ -16,6 +16,7 @@ namespace Castles
 		{
 			// default behavior
 			level = 1;
+            theme = "stone";
 
 			handledPlaforms= new List<Platform>();
 			Monsters = new List<Monster>();

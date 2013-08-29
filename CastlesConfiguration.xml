@@ -56,7 +56,7 @@
         <DefaultPlatform Gfx="platformStone.png" Type="Column" />
         <DefaultPlatformSpecial Gfx="platformViolet.png" Type="Column" />
 
-        <Level>109</Level>
+        <Level>1</Level>
 
         <!-- Development levels -->
         <!-- 103 - custom gfx -->
