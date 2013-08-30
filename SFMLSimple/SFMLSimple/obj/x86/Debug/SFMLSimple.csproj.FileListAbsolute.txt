@@ -1,0 +1,13 @@
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\x86\Debug\SFMLSimple.exe
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\x86\Debug\SFMLSimple.pdb
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\SFMLSimple.exe
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\SFMLSimple.pdb
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\sfmlnet-audio-2.dll
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\sfmlnet-graphics-2.dll
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\sfmlnet-window-2.dll
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\SFMLSimple.exe
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\SFMLSimple.pdb
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\sfmlnet-audio-2.dll
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\sfmlnet-graphics-2.dll
+c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\sfmlnet-window-2.dll
