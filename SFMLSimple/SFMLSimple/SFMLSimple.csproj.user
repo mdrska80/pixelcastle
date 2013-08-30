@@ -4,6 +4,7 @@
     <StartWorkingDirectory>C:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartWorkingDirectory>C:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\Result\</StartWorkingDirectory>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
   </PropertyGroup>
 </Project>
