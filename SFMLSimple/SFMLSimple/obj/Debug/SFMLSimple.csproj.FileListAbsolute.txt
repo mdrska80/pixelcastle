@@ -1,7 +1,0 @@
-c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\bin\Debug\SFMLSimple.exe
-c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\bin\Debug\SFMLSimple.pdb
-c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\Debug\ResolveAssemblyReference.cache
-c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\Debug\SFMLSimple.exe
-c:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\obj\Debug\SFMLSimple.pdb
-C:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\bin\Debug\Tao.OpenGl.dll
-C:\SDLEx\SDLEx\SFMLSimple\SFMLSimple\bin\Debug\Tao.OpenGl.ExtensionLoader.dll
