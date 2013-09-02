@@ -1,0 +1,27 @@
+0.2
+- Rendering dungeon based on simple map
+- Dialogs
+- plynule prechody mezi jednotlivymi tily(platformy)
+- experience system
+- secret spots system
+- multiplatformity (linux, windows)
+
+0.1
+- [done] Definovat verzovani (prvni cislo je oznaceni zverejnene verze, druhe je private release)
+- [done]Monstra jsou schopny nahanet hrace v dungeonu
+- SFML switch
+- In dungeon items
+	- switches
+	- pressure plates
+	- doors
+- dungeon decorations (mrizka, louze na podlaze a dalsi)+
+- cadaver style (single rooms with purposes)
+  - goal is still to pick up all the gems, but quality is not in quantity but in how u get to them.
+- outside to inside transitions (gfx defined per tile...)
+  - water
+  - grass
+  - solid rock
+  - dungeon
+- editor
+- moznost odhodit krabicku a tim zatizit desku....coz nasledne...
+
