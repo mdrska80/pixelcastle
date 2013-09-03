@@ -28,6 +28,8 @@ namespace Castles.managers
             {
                 return new Command_test();
             }
+
+            return null;
         }
     }
 }

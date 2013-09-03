@@ -97,6 +97,7 @@
     <Compile Include="actions\action_jump.cs" />
     <Compile Include="actions\action_togglePlatform.cs" />
     <Compile Include="actions\action_warp.cs" />
+    <Compile Include="commands\Command_test.cs" />
     <Compile Include="gameObjects\items\barrel.cs" />
     <Compile Include="gameObjects\items\base\wallitem.cs" />
     <Compile Include="gameObjects\items\bucket.cs" />
@@ -109,6 +110,8 @@
     </Compile>
     <Compile Include="gameObjects\level\door.cs" />
     <Compile Include="gameObjects\level\IToogable.cs" />
+    <Compile Include="managers\CommandManager.cs" />
+    <Compile Include="commands\ICommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <!-- GameObjects -->
     <Compile Include="gameObjects\entity.cs" />
