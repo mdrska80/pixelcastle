@@ -86,7 +86,7 @@ namespace Castles
             gameView.CreateView(this);
 
             //set up keyboard repeat... :)
-            SdlDotNet.Input.Keyboard.EnableKeyRepeat(100,30);
+            //SdlDotNet.Input.Keyboard.EnableKeyRepeat(100,30);
             
             //Event
             // Music music = new Music(Path.Combine(filePath, Path.Combine(dataDirectory, "fard-two.ogg")));

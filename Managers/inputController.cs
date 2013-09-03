@@ -25,10 +25,10 @@ namespace Castles
 		/// </summary>
 		public void Go()
 		{
-			Events.KeyboardDown += new EventHandler<KeyboardEventArgs>(this.KeyboardDown);
-			Events.MouseButtonDown += new EventHandler<MouseButtonEventArgs>(Events_MouseButtonDown);
+			//Events.KeyboardDown += new EventHandler<KeyboardEventArgs>(this.KeyboardDown);
+			//Events.MouseButtonDown += new EventHandler<MouseButtonEventArgs>(Events_MouseButtonDown);
 
-			Events.Run();
+			//Events.Run();
 		}
 
 

@@ -78,17 +78,18 @@ namespace Castles
                 window.KeyPressed += OnKeyPressed;
                 window.LostFocus += window_LostFocus;
                 window.GainedFocus += window_GainedFocus;
+                window.TextEntered += new EventHandler<TextEventArgs>(window_TextEntered);
 
                 #endregion
 
                 #region Views initializations
-                interfaceView = new interfaceView(new Point(0, 0));
-                levelView = new levelView(Game.I.boardOrigin);
+                //interfaceView = new interfaceView(new Point(0, 0));
+                //levelView = new levelView(Game.I.boardOrigin);
 
-                backgroundView = new backgroundView(new Point(0, 0));
-                debugView = new debugView(new Point(0, 0));
-                editorView = new editorView(new Point(0, 0));
-                gameoverView = new gameoverView(new Point(0, 0));
+                //backgroundView = new backgroundView(new Point(0, 0));
+                //debugView = new debugView(new Point(0, 0));
+                //editorView = new editorView(new Point(0, 0));
+                //gameoverView = new gameoverView(new Point(0, 0));
 
                 #endregion
 
@@ -125,6 +126,20 @@ namespace Castles
 			}
 		}
 
+	    private string buffer = "";
+        void window_TextEntered(object sender, TextEventArgs e)
+        {
+            if (e.Unicode == "\r")
+            {
+                //process command
+                Console.WriteLine("Processing command: {0}", buffer);
+                buffer = string.Empty;                                  // clean the buffer
+                return;
+            }
+
+            buffer += e.Unicode;
+        }
+
         void window_GainedFocus(object sender, EventArgs e)
         {
             Game.I.UnPause();
@@ -144,55 +159,55 @@ namespace Castles
 
 			Game.I.surfaces = 0;
 
-			if (surf == null) return; //nothing to update
+            //if (surf == null) return; //nothing to update
 
-		    switch (Game.I.Screen)
-		    {
-                case Screens.menu:
-		            {
-                        backgroundView.UpdateView(surf);
-                        break;
-		            }
-                case Screens.game:
-		            {
-                        backgroundView.UpdateView(surf);
-                        levelView.UpdateView(surf);
-                        interfaceView.UpdateView(surf);
-                        debugView.UpdateView(surf);
-                        break;
-		            }
-                case Screens.editor:
-		            {
-                        backgroundView.UpdateView(surf);
+            //switch (Game.I.Screen)
+            //{
+            //    case Screens.menu:
+            //        {
+            //            backgroundView.UpdateView(surf);
+            //            break;
+            //        }
+            //    case Screens.game:
+            //        {
+            //            backgroundView.UpdateView(surf);
+            //            levelView.UpdateView(surf);
+            //            interfaceView.UpdateView(surf);
+            //            debugView.UpdateView(surf);
+            //            break;
+            //        }
+            //    case Screens.editor:
+            //        {
+            //            backgroundView.UpdateView(surf);
 
-                        interfaceView.UpdateView(surf);
-                        levelView.UpdateView(surf);
-                        debugView.UpdateView(surf);
-                        editorView.UpdateView(surf);
-                        break;
-		            }
-                case Screens.statistics:
-		            {
-                        backgroundView.UpdateView(surf);
-                        debugView.UpdateView(surf);
-		                break;
-		            }
-                    case Screens.gameOver:
-		            {
-                        backgroundView.UpdateView(surf);
-                        debugView.UpdateView(surf);
-		                gameoverView.UpdateView(surf);
-                        break;
-		            }
-		        default:
-		            {
-                        backgroundView.UpdateView(surf);
-                        debugView.UpdateView(surf);
+            //            interfaceView.UpdateView(surf);
+            //            levelView.UpdateView(surf);
+            //            debugView.UpdateView(surf);
+            //            editorView.UpdateView(surf);
+            //            break;
+            //        }
+            //    case Screens.statistics:
+            //        {
+            //            backgroundView.UpdateView(surf);
+            //            debugView.UpdateView(surf);
+            //            break;
+            //        }
+            //        case Screens.gameOver:
+            //        {
+            //            backgroundView.UpdateView(surf);
+            //            debugView.UpdateView(surf);
+            //            gameoverView.UpdateView(surf);
+            //            break;
+            //        }
+            //    default:
+            //        {
+            //            backgroundView.UpdateView(surf);
+            //            debugView.UpdateView(surf);
 
-                        break;
-		            }
+            //            break;
+            //        }
 
-		    }
+            //}
 
 		    // blit
 //			Video.Screen.Blit(surf);
@@ -260,12 +275,6 @@ namespace Castles
             }
         }
 
-        //private void Quit(object sender, QuitEventArgs e)
-        //{
-        //    Events.QuitApplication();
-        //}
-
-
         /// <summary>
         /// Function called when the window is closed
         /// </summary>
@@ -284,6 +293,5 @@ namespace Castles
             if (e.Code == Keyboard.Key.Escape)
                 window.Close();
         }
-
 	}
 }
