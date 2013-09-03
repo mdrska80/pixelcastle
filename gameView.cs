@@ -129,16 +129,39 @@ namespace Castles
 	    private string buffer = "";
         void window_TextEntered(object sender, TextEventArgs e)
         {
+            bool handled = false;
+
             // did we hit enter?
             if (e.Unicode == "\r")
             {
-                //process command
-                Console.WriteLine("Processing command: {0}", buffer);
-                buffer = string.Empty;                                  // clean the buffer
-                return;
+                if (buffer[0] == '/')
+                {
+                    //process command, always starts with slash
+                    Console.WriteLine("Processing command: {0}", buffer);
+
+                    CommandManager.HandleCommand(buffer.Substring(1, buffer.Length-1));
+
+                    buffer = string.Empty; // clean the buffer
+                    handled = true;
+                }
             }
 
-            buffer += e.Unicode;
+            //ctrl + i, tab
+            if (e.Unicode == "\t")
+            {
+                Console.WriteLine("CTRL I PRESSED");
+                handled = true;
+            }
+
+            //backspace
+            if (e.Unicode == "\b")
+            {
+                buffer = buffer.Substring(0, buffer.Length - 1);
+                handled = true;
+            }
+
+            if (!handled)
+                buffer += e.Unicode;
         }
 
         void window_GainedFocus(object sender, EventArgs e)
@@ -238,11 +261,13 @@ namespace Castles
         {
             if (!Game.I.isPaused)
             {
+                //update player
                 if (Game.I.player != null)
                     Game.I.player.Update();
 
                 if (Game.I.level != null)
                 {
+                    //update monsters
                     Game.I.level.ClearPathFindingInfo();
 
                     if (Game.I.level.Monsters != null)

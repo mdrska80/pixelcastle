@@ -68,13 +68,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="sfmlnet-audio-2">
-      <HintPath>..\..\_references\SFML\sfmlnet-audio-2.dll</HintPath>
+      <HintPath>..\..\_references\SFML_2.1\sfmlnet-audio-2.dll</HintPath>
     </Reference>
     <Reference Include="sfmlnet-graphics-2">
-      <HintPath>..\..\_references\SFML\sfmlnet-graphics-2.dll</HintPath>
+      <HintPath>..\..\_references\SFML_2.1\sfmlnet-graphics-2.dll</HintPath>
     </Reference>
     <Reference Include="sfmlnet-window-2">
-      <HintPath>..\..\_references\SFML\sfmlnet-window-2.dll</HintPath>
+      <HintPath>..\..\_references\SFML_2.1\sfmlnet-window-2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

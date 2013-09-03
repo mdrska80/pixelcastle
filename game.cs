@@ -57,6 +57,7 @@ namespace Castles
             this.gameStatus = GameStatus.Preparing;
             this.resourceManager = resourceManager;
             this.screenManager = new ScreenManager();
+
             themes = new Dictionary<string, Theme>();
 
             resourceManager.Init(CastlesConfigurationReader.GetConfiguration().DataFolder);

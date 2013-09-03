@@ -97,6 +97,7 @@
     <Compile Include="actions\action_jump.cs" />
     <Compile Include="actions\action_togglePlatform.cs" />
     <Compile Include="actions\action_warp.cs" />
+    <Compile Include="commands\Command_NotRecognized.cs" />
     <Compile Include="commands\Command_test.cs" />
     <Compile Include="gameObjects\items\barrel.cs" />
     <Compile Include="gameObjects\items\base\wallitem.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Castles.commands;
 
-namespace Castles.managers
+namespace Castles
 {
     public class CommandManager
     {
@@ -22,14 +22,15 @@ namespace Castles.managers
             }
         }
 
-        public static ICommand RetrieveCommand(string command)
+        private static ICommand RetrieveCommand(string command)
         {
+            //here is actually list of all possible commands
             if (command == "test")
             {
                 return new Command_test();
             }
 
-            return null;
+            return new Command_NotRecognized(command);
         }
     }
 }
