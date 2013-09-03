@@ -46,6 +46,12 @@
       <HintPath>_references\SdlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cairo" />
+    <Reference Include="sfmlnet-graphics-2">
+      <HintPath>_references\SFML_2.1\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="sfmlnet-window-2">
+      <HintPath>_references\SFML_2.1\sfmlnet-window-2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="actions\action_generateMonster.cs" />
@@ -120,7 +126,7 @@
     <Compile Include="views\interfaceView.cs" />
     <Compile Include="views\levelView.cs" />
     <Compile Include="views\backgroundView.cs" />
-    <Compile Include="views\gameView.cs" />
+    <Compile Include="gameView.cs" />
     <Compile Include="views\editorView.cs" />
     <Compile Include="views\debugView.cs" />
     <Compile Include="views\mapView.cs" />

@@ -37,7 +37,8 @@ namespace Castles
         bonus,          // bonus during gme
         statistics,      // level statistics.
         level,
-        loading
+        loading,
+        pause           // game is paused
     }
 
     public enum EditorObjects

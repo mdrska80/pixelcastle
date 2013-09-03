@@ -103,6 +103,20 @@ namespace Castles
             this.gameStatus = GameStatus.Started;
         }
 
+
+        public void Pause()
+        {
+            isPaused = true;
+            Screen = Screens.pause;
+        }
+
+        public void UnPause()
+        {
+            isPaused = false;
+
+            //this shoud be previous screen
+            Screen = Screens.game;
+        }
     }
 
 
