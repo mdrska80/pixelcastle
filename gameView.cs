@@ -129,6 +129,7 @@ namespace Castles
 	    private string buffer = "";
         void window_TextEntered(object sender, TextEventArgs e)
         {
+            // did we hit enter?
             if (e.Unicode == "\r")
             {
                 //process command
