@@ -104,35 +104,35 @@
     <Compile Include="actions\action_destroyPlatform.cs" />
     <Compile Include="actions\action_createPlatform.cs" />
     <!-- Managers -->
-    <Compile Include="Managers\resourceManager.cs" />
-    <Compile Include="Managers\screenManager.cs" />
-    <Compile Include="Managers\inputController.cs" />
+    <Compile Include="managers\resourceManager.cs" />
+    <Compile Include="managers\screenManager.cs" />
+    <Compile Include="managers\inputController.cs" />
     <!-- Common -->
     <Compile Include="program.cs" />
     <Compile Include="game.cs" />
     <!-- Views -->
-    <Compile Include="Statistics\Profile.cs" />
-    <Compile Include="Statistics\Statistics.cs" />
-    <Compile Include="Tools\theme.cs" />
-    <Compile Include="Views\Base\BaseView.cs" />
-    <Compile Include="Views\Board.cs" />
-    <Compile Include="Views\gameoverView.cs" />
-    <Compile Include="Views\interfaceView.cs" />
-    <Compile Include="Views\levelView.cs" />
-    <Compile Include="Views\backgroundView.cs" />
-    <Compile Include="Views\gameView.cs" />
-    <Compile Include="Views\editorView.cs" />
-    <Compile Include="Views\debugView.cs" />
-    <Compile Include="Views\mapView.cs" />
+    <Compile Include="statistics\Profile.cs" />
+    <Compile Include="statistics\Statistics.cs" />
+    <Compile Include="tools\theme.cs" />
+    <Compile Include="views\base\BaseView.cs" />
+    <Compile Include="views\Board.cs" />
+    <Compile Include="views\gameoverView.cs" />
+    <Compile Include="views\interfaceView.cs" />
+    <Compile Include="views\levelView.cs" />
+    <Compile Include="views\backgroundView.cs" />
+    <Compile Include="views\gameView.cs" />
+    <Compile Include="views\editorView.cs" />
+    <Compile Include="views\debugView.cs" />
+    <Compile Include="views\mapView.cs" />
     <!-- Configuration -->
-    <Compile Include="Conf\CastlesConfigurationReader.cs" />
-    <Compile Include="Conf\CastlesConfiguration.cs" />
+    <Compile Include="system\conf\CastlesConfigurationReader.cs" />
+    <Compile Include="system\conf\CastlesConfiguration.cs" />
     <!-- Tools -->
-    <Compile Include="Tools\Serializer.cs" />
-    <Compile Include="Tools\Extensions.cs" />
-    <Compile Include="Tools\enums.cs" />
-    <Compile Include="Tools\common.cs" />
-    <Compile Include="Tools\score.cs" />
+    <Compile Include="tools\Serializer.cs" />
+    <Compile Include="tools\Extensions.cs" />
+    <Compile Include="tools\enums.cs" />
+    <Compile Include="tools\common.cs" />
+    <Compile Include="tools\score.cs" />
     <Compile Include="gameObjects\items\Booobak_item.cs" />
   </ItemGroup>
   <ItemGroup>
