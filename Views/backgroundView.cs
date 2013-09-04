@@ -1,22 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using SdlDotNet.Graphics;
+using SFML.Graphics;
+using SFML.Window;
 
 namespace Castles
 {
     public class backgroundView : BaseView
     {
-        public backgroundView(Point origin) : base(origin)
+        public backgroundView(Vector2f origin) : base(origin)
         {
         }
 
-        public override void UpdateView(Surface surf)
+        public override void UpdateView(RenderWindow window)
         {
-			surf.Fill(Color.FromArgb(30,32,37));
+            window.Clear(new Color(30, 32, 37));
         }
-
     }
 }

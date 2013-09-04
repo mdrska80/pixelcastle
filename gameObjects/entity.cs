@@ -56,7 +56,6 @@ namespace Castles
         /// </summary>
         public Experience Experience { get; set; }
 
-
         /// <summary>
         /// ctor
         /// </summary>

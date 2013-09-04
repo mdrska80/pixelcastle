@@ -20,6 +20,11 @@ namespace Castles
             sIsGamePaused = Game.I.resourceManager.GetGfx("IsGamePaused.png");
         }
 
+        public override void UpdateView(SFML.Graphics.RenderWindow window)
+        {
+            base.UpdateView(window);
+        }
+
         public override void UpdateView(Surface surf)
         {
             if (Game.I.isPaused)

@@ -1,34 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using SdlDotNet.Graphics;
+﻿using SFML.Graphics;
+using SFML.Window;
 
 namespace Castles
 {
     public interface IView
     {
-        void UpdateView(Surface surf);
+        void UpdateView(RenderWindow surf);
     }
 
     public class BaseView : IView
     {
-        protected Point origin { get; set; }
+        //protected Point origin { get; set; }
+        protected Vector2f origin { get; set; }
 
-        public BaseView(Point origin)
+        public BaseView(Vector2f origin)
         {
             this.origin = origin;
         }
 
-        public virtual void UpdateView(Surface surf)
+        public virtual void UpdateView(RenderWindow window)
         {
         }
 
-        protected Point OP(int X, int Y)
+        /// <summary>
+        /// Shift out new vector relative to origin
+        /// </summary>
+        /// <param name="X">X</param>
+        /// <param name="Y">Y</param>
+        /// <returns>Shifted vector</returns>
+        protected Vector2f OP(int X, int Y)
         {
-            return new Point(X+origin.X, Y+origin.Y);
+            return new Vector2f(X+origin.X, Y+origin.Y);
         }
-
     }
 }

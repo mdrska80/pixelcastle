@@ -67,11 +67,12 @@ namespace Castles
                 contextSettings.DepthBits = 32;
 
                 // Create the main window
-                Window window = new Window(new VideoMode(1024, 768), "SFML window with OpenGL", Styles.Default, contextSettings);
+                RenderWindow window = new RenderWindow(new VideoMode(1024, 768), "SFML window with OpenGL", Styles.Default, contextSettings);
                 window.SetTitle(resourceManager.Texts["WINDOW_CAPTION"]);
 
                 // Make it the active window for OpenGL calls
                 window.SetActive();
+                window.SetKeyRepeatEnabled(true);
 
                 // Setup event handlers
                 window.Closed += OnClosed;
@@ -83,7 +84,7 @@ namespace Castles
                 #endregion
 
                 #region Views initializations
-                //interfaceView = new interfaceView(new Point(0, 0));
+                interfaceView = new interfaceView(new Point(0, 0));
                 //levelView = new levelView(Game.I.boardOrigin);
 
                 //backgroundView = new backgroundView(new Point(0, 0));
@@ -100,7 +101,7 @@ namespace Castles
                     window.DispatchEvents();
                    
                     //redraw whatever we need
-                    UpdateViews();
+                    UpdateViews(window);
 
                     // Finally, display the rendered frame on screen
                     window.Display();
@@ -163,7 +164,7 @@ namespace Castles
 		/// <summary>
 		/// 
 		/// </summary>
-		public void UpdateViews()
+		public void UpdateViews(RenderWindow window)
 		{
 			//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Black);
 
@@ -171,8 +172,8 @@ namespace Castles
 
             //if (surf == null) return; //nothing to update
 
-            //switch (Game.I.Screen)
-            //{
+            switch (Game.I.Screen)
+            {
             //    case Screens.menu:
             //        {
             //            backgroundView.UpdateView(surf);
@@ -209,15 +210,15 @@ namespace Castles
             //            gameoverView.UpdateView(surf);
             //            break;
             //        }
-            //    default:
-            //        {
-            //            backgroundView.UpdateView(surf);
-            //            debugView.UpdateView(surf);
+                default:
+                    {
+                        backgroundView.UpdateView(window);
+                        debugView.UpdateView(window);
 
-            //            break;
-            //        }
+                        break;
+                    }
 
-            //}
+            }
 
 		    // blit
 //			Video.Screen.Blit(surf);

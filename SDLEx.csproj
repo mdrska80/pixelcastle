@@ -99,6 +99,7 @@
     <Compile Include="actions\action_warp.cs" />
     <Compile Include="commands\Command_NotRecognized.cs" />
     <Compile Include="commands\Command_test.cs" />
+    <Compile Include="gameObjects\Experience.cs" />
     <Compile Include="gameObjects\items\barrel.cs" />
     <Compile Include="gameObjects\items\base\wallitem.cs" />
     <Compile Include="gameObjects\items\bucket.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="gameObjects\level\door.cs" />
     <Compile Include="gameObjects\level\IToogable.cs" />
     <Compile Include="gameObjects\npc.cs" />
+    <Compile Include="gameObjects\NPCs\NPC_Guard.cs" />
     <Compile Include="gameObjects\NPCs\NPC_SkillTrainer.cs" />
     <Compile Include="gameObjects\skills\BaseSkill.cs" />
     <Compile Include="gameObjects\skills\ISkill.cs" />

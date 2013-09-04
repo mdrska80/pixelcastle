@@ -13,7 +13,7 @@
 	- switches
 	- pressure plates
 	- doors
-- experience
+- [done] Experience
 - experience system
 - dungeon decorations (mrizka, louze na podlaze a dalsi)+
 - set up style (rogue like? ale more rpg, less deadly)
