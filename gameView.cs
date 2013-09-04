@@ -81,16 +81,18 @@ namespace Castles
                 window.GainedFocus += window_GainedFocus;
                 window.TextEntered += new EventHandler<TextEventArgs>(window_TextEntered);
 
+                window.KeyPressed += new EventHandler<KeyEventArgs>(window_KeyPressed);
+
                 #endregion
 
                 #region Views initializations
-                interfaceView = new interfaceView(new Point(0, 0));
-                //levelView = new levelView(Game.I.boardOrigin);
+                interfaceView = new interfaceView(new Vector2i(0, 0));
+                levelView = new levelView(Game.I.boardOrigin);
 
-                //backgroundView = new backgroundView(new Point(0, 0));
-                //debugView = new debugView(new Point(0, 0));
-                //editorView = new editorView(new Point(0, 0));
-                //gameoverView = new gameoverView(new Point(0, 0));
+                backgroundView = new backgroundView(new Vector2i(0, 0));
+                debugView = new debugView(new Vector2i(0, 0));
+                editorView = new editorView(new Vector2i(0, 0));
+                gameoverView = new gameoverView(new Vector2i(0, 0));
 
                 #endregion
 
@@ -112,6 +114,14 @@ namespace Castles
 				Console.WriteLine(ex);
 			}
 		}
+
+        void window_KeyPressed(object sender, KeyEventArgs e)
+        {
+            if (e.Code == Keyboard.Key.BackSlash)
+            {
+                //fdsfsd
+            }
+        }
 
 	    private string buffer = "";
         void window_TextEntered(object sender, TextEventArgs e)

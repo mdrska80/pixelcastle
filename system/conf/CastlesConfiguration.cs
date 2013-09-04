@@ -126,5 +126,11 @@ namespace Castles.Conf
 
         [XmlAttribute]
         public int probabilty {get;set;}
+
+        /// <summary>
+        /// Code which will code will acces this texture
+        /// </summary>
+        [XmlAttribute]
+        public string code { get; set; }
     }
 }

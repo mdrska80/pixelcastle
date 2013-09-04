@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections;
 using System.Reflection;
 using System.Diagnostics;
-
+using SFML.Graphics;
 using SdlDotNet;
 using SdlDotNet.Audio;
 using SdlDotNet.Graphics;
@@ -17,6 +17,10 @@ namespace Castles
         public GemType type = GemType.normal;
         public int charges { get; set; }
 
+        #region graphics
+            private Sprite sMain;
+        #endregion
+
         public override bool TryToPickup()
         {
             charges--;
@@ -25,7 +29,16 @@ namespace Castles
                 picked = true;
 
             return picked;
-        }   
+        }
+
+        /// <summary>
+        /// GFX initialization
+        /// </summary>
+        public override void InitGfx()
+        {
+            sMain = new Sprite(Game.I.resourceManager.GetGfx("GEM"));
+            base.InitGfx();
+        }
     }
 
     public enum GemType

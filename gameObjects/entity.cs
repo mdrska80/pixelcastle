@@ -79,6 +79,11 @@ namespace Castles
         {
         }
 
+        public virtual void InitGfx()
+        {
+
+        }
+
         /// <summary>
         /// Metoda provede kontrolu zda hrac ma skill pod danym kodem.
         /// </summary>

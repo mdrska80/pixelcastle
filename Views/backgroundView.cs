@@ -5,7 +5,7 @@ namespace Castles
 {
     public class backgroundView : BaseView
     {
-        public backgroundView(Vector2f origin) : base(origin)
+        public backgroundView(Vector2i origin) : base(origin)
         {
         }
 

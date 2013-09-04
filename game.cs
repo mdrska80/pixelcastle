@@ -1,7 +1,6 @@
 using System.Collections.Generic;
+using SFML.Window;
 using Castles.Conf;
-using System.Drawing;
-using SdlDotNet.Core;
 
 namespace Castles
 {
@@ -18,16 +17,11 @@ namespace Castles
         public Player player;
         public Score highScore;
 
-        public Point boardOrigin;
+        public Vector2i boardOrigin;
 
         // what screen we do want
         public Screens Screen = Screens.editor;
         public bool isPaused = false;
-
-        /// <summary>
-        /// Themes collection
-        /// </summary>
-        public Dictionary<string, Theme> themes { get; set; }
 
         #region editing_stuff
             //editor, why -57? ... :)
@@ -36,7 +30,6 @@ namespace Castles
             // what am I currently editing?
             public EditorObjects editingObject = EditorObjects.platforms; 
         #endregion
-
 
         // statistics
         public int surfaces = 0;
@@ -64,7 +57,7 @@ namespace Castles
             themes = new Dictionary<string, Theme>();
 
             resourceManager.Init(CastlesConfigurationReader.GetConfiguration().DataFolder);
-            boardOrigin = new Point(500, 200);
+            boardOrigin = new Vector2i(500, 200);
 
             screenManager.StartNewGame();
 
@@ -95,22 +88,7 @@ namespace Castles
 
             GameView gameView = new GameView(resourceManager);
             gameView.CreateView(this);
-
-            //set up keyboard repeat... :)
-            //SdlDotNet.Input.Keyboard.EnableKeyRepeat(100,30);
             
-            //Event
-            // Music music = new Music(Path.Combine(filePath, Path.Combine(dataDirectory, "fard-two.ogg")));
-
-            // try
-            // {
-            //     music.Play(-1);
-            // }
-            // catch (DivideByZeroException)
-            // {
-            //     // Linux audio problem
-            // }
-
             this.gameStatus = GameStatus.Started;
         }
 
@@ -129,6 +107,4 @@ namespace Castles
             Screen = Screens.game;
         }
     }
-
-
 }

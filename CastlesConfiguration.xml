@@ -185,7 +185,7 @@
         <Gfx gfx="Gfx/Column.png" />
 
         <!-- Gems -->
-        <Gfx gfx="Gfx/Gems/Gem.png" />
+        <Gfx code="GEM" gfx="Gfx/Gems/Gem.png" />
         <Gfx gfx="Gfx/Gems/GemCrime.png" />
         <Gfx gfx="Gfx/Gems/GemGreen.png" />
         <Gfx gfx="Gfx/Gems/GemRed.png" />

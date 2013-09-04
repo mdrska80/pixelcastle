@@ -19,6 +19,8 @@ namespace Castles
         public Item()
         {
             Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
+
+            InitGfx();
         }
 
         void eventManager_OnTurnEnd()
@@ -33,6 +35,11 @@ namespace Castles
         public virtual bool TryToPickup()
         {
             return false;
-        }        
+        }
+
+        public virtual void InitGfx()
+        {
+
+        }
     }
 }

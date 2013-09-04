@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using SdlDotNet.Graphics;
+﻿using System.Collections.Generic;
+using SFML.Graphics;
+using SFML.Window;
 
 namespace Castles
 {
@@ -12,15 +9,16 @@ namespace Castles
         private Board b = new Board();
 
         //surfaces required for this View
-        public Surface sIsGamePaused {get;set;}
+        public Texture sIsGamePaused {get;set;}
 
 
-        public interfaceView(Point origin) : base(origin)
+        public interfaceView(Vector2i origin)
+            : base(origin)
         {
             sIsGamePaused = Game.I.resourceManager.GetGfx("IsGamePaused.png");
         }
 
-        public override void UpdateView(SFML.Graphics.RenderWindow window)
+        public override void UpdateView(RenderWindow window)
         {
             base.UpdateView(window);
         }

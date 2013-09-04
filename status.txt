@@ -25,4 +25,5 @@
 - editor
 - object interaction with world (firestaff, etc...)
 - moznost odhodit krabicku a tim zatizit desku....coz nasledne...
+- vnitrky budov....vejdu a nahraje se nova mapa.
 

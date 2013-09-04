@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+
+using SFML.Graphics;
+using SFML.Window;
+
+using Castles.Tools;
 using Castles.Conf;
 using Castles.gameObjects;
 using Castles.gameObjects.items;
-using SdlDotNet.Graphics;
-using SdlDotNet.Graphics.Sprites;
-
-using Castles.Tools;
 
 namespace Castles.Views
 {
@@ -21,133 +22,13 @@ namespace Castles.Views
         //public Surface sPlatform  {get;set;}
         public Surface sPlatformSpecial { get; set; }
 
-        public Surface sGem  {get;set;}
-        public Surface sCauldron  {get;set;}
-        public Surface sBarrel  {get;set;}
-        public Surface sBox  {get;set;}
-        public Surface sBucket { get; set; }
-        public Surface sBooobakItem { get; set; }
-
-        /// <summary>
-        /// index is height
-        /// </summary>
-        public List<Surface> sColumns {get;set;}
-        public List<Surface> sColumnsSpecial { get; set; }
-        public List<Surface> sColumnsPits { get; set; }
-        public List<Surface> sColumnsBlocks { get; set; }
-        public List<Surface> sColumnsTeleports { get; set; }
-        public List<Surface> sColumnsPressures { get; set; }
-
-        public Theme t { get; set; }
-
-        public levelView(Point origin) : base(origin)
+        public levelView(Vector2i origin) : base(origin)
         {
             r = new Random();
-            //sPlatform = resourceManager.GetGfx(CastlesConfigurationReader.GetConfiguration().Editor.DefaultPlatform.Gfx);
-            sPlatformSpecial = Game.I.resourceManager.GetGfx(CastlesConfigurationReader.GetConfiguration().Editor.DefaultPlatformSpecial.Gfx);
-            sGem = Game.I.resourceManager.GetGfx("GemCrime.png");
-            sCauldron = Game.I.resourceManager.GetGfx("Cauldron.png");
-            sBarrel = Game.I.resourceManager.GetGfx("Barrel.png");
-            sBox = Game.I.resourceManager.GetGfx("Box.png");
-            sBucket = Game.I.resourceManager.GetGfx("Bucket.png");
-            sBooobakItem = Game.I.resourceManager.GetGfx("BooobakItem.png");
-
-            t = Game.I.themes[Game.I.level.theme];
         }
-
-
-        public void PrepareColumns(Surface surf)
+        
+        public override void UpdateView(RenderWindow window)
         {
-            sColumns = new List<Surface>();
-            sColumnsSpecial = new List<Surface>();
-            sColumnsPits = new List<Surface>();
-            sColumnsBlocks = new List<Surface>();
-            sColumnsTeleports = new List<Surface>();
-            sColumnsPressures = new List<Surface>();
-
-
-            //get max layer used in this level
-            int maxLayer = 30;// Game.I.level.GetMaxLayer() + 1;
-            Level l = Game.I.level;
-            Surface sTheme = Game.I.resourceManager.GetGfx(l.theme);
-
-            if (sTheme == null)
-                sTheme = Game.I.resourceManager.GetGfx(CastlesConfigurationReader.GetConfiguration().Editor.DefaultPlatform.Gfx);
-
-//            Theme t = null;
-  //          if  ((!string.IsNullOrEmpty(l.theme))  && (Game.I.themes.ContainsKey(l.theme)))
-    //            t = Game.I.themes[l.theme];
-
-            for(int i = 0;i<=maxLayer;i++)
-            {
-                Surface sx = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sx.Transparent = true;
-
-                Surface sxSpecial = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sxSpecial.Transparent = true;
-
-                Surface sxPit = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sxPit.Transparent = true;
-
-                Surface sxBlock = surf.CreateCompatibleSurface(48, i * Common.halfheight+42, true);
-                sxBlock.Transparent = true;
-
-                Surface sxTeleport = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sxTeleport.Transparent = true;
-
-                Surface sxPressure = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sxPressure.Transparent = true;                
-
-                Surface sxDarken = surf.CreateCompatibleSurface(48, i * Common.halfheight + PLATFORM_HEIGHT, true);
-                sxDarken.Transparent = true;
-
-                for(int j = i; j>=0; j--)
-                {
-                    if (t != null)
-                    {
-                        sTheme = t.GetRandomPlatform();
-
-                        sxPit.Blit(t.PitPlatform, new Point(0, j * Common.stepheight));
-                        sxBlock.Blit(t.BlockPlatform, new Point(0, j * Common.stepheight));
-                        sxTeleport.Blit(t.TeleportPlatform, new Point(0, j * Common.stepheight));
-                        sxPressure.Blit(t.PressurePlatePlatform, new Point(0, j * Common.stepheight));
-
-                    }
-
-                    sx.Blit(sTheme, new Point(0, j*Common.stepheight));
-
-                    if (j == 0)
-                        sxSpecial.Blit(sPlatformSpecial, new Point(0, j * Common.stepheight));
-                    else
-                        sxSpecial.Blit(sTheme, new Point(0, j * Common.stepheight));
-
-                }
-
-                sColumns.Add(sx);
-                sColumnsSpecial.Add(sxSpecial);
-                sColumnsPits.Add(sxPit);
-                sColumnsBlocks.Add(sxBlock);
-                sColumnsTeleports.Add(sxTeleport);
-                sColumnsPressures.Add(sxPressure);
-
-            }
-        }
-
-
-
-        public override void UpdateView(Surface surf)
-        {
-            if (CastlesConfigurationReader.GetConfiguration().PermaLevelReloading)
-                if (Game.I.level != null)
-                    Game.I.level = Game.I.level.Reload();
-                else
-                    Game.I.level = Level.Load(1);
-
-            if (sColumns==null)
-            {
-                PrepareColumns(surf);
-            }
-
             Level level = Game.I.level;
             List<Monster> monsters = Game.I.level.Monsters;
 

@@ -90,7 +90,6 @@
     <Reference Include="SdlDotNet">
       <HintPath>_references\SdlDotNet.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cairo" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="actions\action_generateMonster.cs" />
@@ -171,7 +170,6 @@
     <!-- Views -->
     <Compile Include="statistics\Profile.cs" />
     <Compile Include="statistics\Statistics.cs" />
-    <Compile Include="tools\theme.cs" />
     <Compile Include="views\base\BaseView.cs" />
     <Compile Include="views\Board.cs" />
     <Compile Include="views\gameoverView.cs" />
