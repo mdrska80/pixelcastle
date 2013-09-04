@@ -5,6 +5,7 @@
 - experience system
 - secret spots system
 - multiplatformity (linux, windows)
+- rescue missions
 
 0.1
 - [done] Definovat verzovani (prvni cislo je oznaceni zverejnene verze, druhe je private release)

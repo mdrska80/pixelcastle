@@ -13,6 +13,7 @@ namespace Castles
         public GameStatus gameStatus;
         public ResourceManager resourceManager;
         public ScreenManager screenManager;
+        public EventManager eventManager;
         public Level level;
         public Player player;
         public Score highScore;
@@ -57,6 +58,7 @@ namespace Castles
             this.gameStatus = GameStatus.Preparing;
             this.resourceManager = resourceManager;
             this.screenManager = new ScreenManager();
+            this.eventManager = new EventManager();
 
             themes = new Dictionary<string, Theme>();
 

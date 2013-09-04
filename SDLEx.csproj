@@ -111,8 +111,15 @@
     </Compile>
     <Compile Include="gameObjects\level\door.cs" />
     <Compile Include="gameObjects\level\IToogable.cs" />
+    <Compile Include="gameObjects\npc.cs" />
+    <Compile Include="gameObjects\NPCs\NPC_SkillTrainer.cs" />
+    <Compile Include="gameObjects\skills\BaseSkill.cs" />
+    <Compile Include="gameObjects\skills\ISkill.cs" />
+    <Compile Include="gameObjects\skills\Skill_Immortal.cs" />
+    <Compile Include="gameObjects\skills\Skill_Walk.cs" />
     <Compile Include="managers\CommandManager.cs" />
     <Compile Include="commands\ICommand.cs" />
+    <Compile Include="managers\EventManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <!-- GameObjects -->
     <Compile Include="gameObjects\entity.cs" />

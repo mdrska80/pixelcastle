@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Castles.Conf;
 using Castles.gameObjects;
+using Castles.gameObjects.skills;
 using SdlDotNet.Graphics.Sprites;
 
 namespace Castles
@@ -62,7 +63,11 @@ namespace Castles
 			sprite.Animate = true;            
 		}
 
-		
+        public override void AssignSkills()
+        {
+            //player can walk...
+            Skills.Add(new Skill_Walk());
+        }
 
 		public override void Update()
 		{

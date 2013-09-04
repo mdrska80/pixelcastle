@@ -98,27 +98,13 @@ namespace Castles
                 {
                     // Process events
                     window.DispatchEvents();
-
-                    // tohle je trochu blby...to by se melo obnovovat jen parkrat za cas...
-                    UpdateGameObjects();
-                    
+                   
                     //redraw whatever we need
                     UpdateViews();
 
                     // Finally, display the rendered frame on screen
                     window.Display();
                 }
-
-				//screen = Video.SetVideoMode(1024, 768);
-				//Video.WindowIcon();
-				//Video.WindowCaption = resourceManager.Texts["WINDOW_CAPTION"];
-				//Video.SetVideoMode(1024,768);//, false, false, false, true, true);
-
-				//this.surf = Video.Screen.CreateCompatibleSurface();
-
-				//fill the surface with black
-				//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Red);
-				//Mouse.ShowCursor = false;
 			}
 			catch(Exception ex)
 			{
@@ -237,69 +223,6 @@ namespace Castles
 //			Video.Screen.Blit(surf);
 	//		Video.Screen.Update();
 		}
-
-	    //private int i = 1;
-
-        //float lastTime = 0;
-        //private void Tick(object sender, TickEventArgs e)
-        //{
-        //    if (game != null)
-        //    {
-        //        float time = Timer.TicksElapsed;
-        //        if (time - lastTime > 50) //every second, update game objects
-        //        {
-        //            //thread?
-        //            UpdateGameObjects();
-        //            lastTime = Timer.TicksElapsed;
-        //        }
-
-        //        UpdateView();
-        //    }
-        //}
-
-        private void UpdateGameObjects()
-        {
-            if (!Game.I.isPaused)
-            {
-                //update player
-                if (Game.I.player != null)
-                    Game.I.player.Update();
-
-                if (Game.I.level != null)
-                {
-                    //update monsters
-                    Game.I.level.ClearPathFindingInfo();
-
-                    if (Game.I.level.Monsters != null)
-                    {
-                        // Update monster positions
-                        foreach (Monster m in Game.I.level.Monsters)
-                        {
-                            if (m != null)
-                                m.Update();
-                        }
-                    }
-
-                    // update ingame items
-
-                    // is there a cauldron?
-                    if (Game.I.level.HoneyCauldron != null)
-                        Game.I.level.HoneyCauldron.Update();
-
-                    // update platforms, move them, etc...
-                    Game.I.level.Update();
-
-                    //clear handled platforms
-                    foreach (var handledPlaform in Game.I.level.handledPlaforms)
-                    {
-                        handledPlaform.handled = false;
-                    }
-
-                    Game.I.level.handledPlaforms.Clear();
-                }
-
-            }
-        }
 
         /// <summary>
         /// Function called when the window is closed

@@ -10,6 +10,7 @@ using System.Timers;
 using System.Xml.Serialization;
 using Castles.Conf;
 using SdlDotNet.Graphics.Sprites;
+using System.Linq;
 
 namespace Castles
 {
@@ -45,6 +46,11 @@ namespace Castles
         public int ShiftX {get;set;}
         public int ShiftY {get;set;}
 
+        /// <summary>
+        /// What kind of skills player have.
+        /// </summary>
+        public List<ISkill> Skills { get; set; }
+
 
 
         /// <summary>
@@ -60,6 +66,33 @@ namespace Castles
             isPickingGemsAllowed = true;
 
             chasingTarget = new IGPos(0,0,0);
+
+            Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
+
+            AssignSkills();
+        }
+
+        public virtual void AssignSkills()
+        {
+        }
+
+        /// <summary>
+        /// Metoda provede kontrolu zda hrac ma skill pod danym kodem.
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public ISkill CheckSkill(string code)
+        {
+            var y = (from x in Skills
+                     where x.Code == code
+                     select x).FirstOrDefault();
+
+            return y;
+        }
+
+        void eventManager_OnTurnEnd()
+        {
+            Update();
         }
 
         public bool isAlive
@@ -97,18 +130,33 @@ namespace Castles
 
         public virtual Platform CanMove(Direction dir)
         {
-            return Level.CheckPlatform(Common.GetDesiredPosition(dir, position), position);
+            if (CheckSkill("SKILL_MOVE")!=null)
+            {
+                return Level.CheckPlatform(Common.GetDesiredPosition(dir, position), position);
+            }
+
+            return null;
         }
 
         public virtual Platform CanMove(Direction dir, IGPos pos)
         {
-            return Level.CheckPlatform(Common.GetDesiredPosition(dir, pos), pos);
+            if (CheckSkill("SKILL_MOVE") != null)
+            {
+                return Level.CheckPlatform(Common.GetDesiredPosition(dir, pos), pos);
+            }
+
+            return null;
         }
 
         public Platform CanMove(Direction dir, Platform p)
         {
-            IGPos pos = new IGPos(p.x, p.y, p.layer);
-            return Level.CheckPlatform(Common.GetDesiredPosition(dir, pos), pos);
+            if (CheckSkill("SKILL_MOVE") != null)
+            {
+                IGPos pos = new IGPos(p.x, p.y, p.layer);
+                return Level.CheckPlatform(Common.GetDesiredPosition(dir, pos), pos);
+            }
+
+            return null;
         }
 
         /// <summary>
@@ -148,8 +196,6 @@ namespace Castles
             //tohle je tu nejake divne....
             if (md.ET == EntityType.Player)
                 md.Class = "Castles.Player";
-            
-
             
             string cls = CastlesConfigurationReader.GetConfiguration().GetEntityByType(md.ET).Class;
             try

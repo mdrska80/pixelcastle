@@ -14,33 +14,20 @@ namespace Castles
     public class Item
     {
         public string id = Guid.NewGuid().ToString();
-
         public IGPos position {get;set;}
 
-        #region update
-        public int speed { get; set; }
-        public int sspeeed { get; set; }        
-
-        public bool timeToUpdate
+        public Item()
         {
-            get
-            {
-                sspeeed++;
-                bool toReturn = (sspeeed >= speed);
-
-                if (toReturn)
-                    sspeeed = 0;
-
-                return toReturn;
-            }
+            Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
         }
-        #endregion
 
+        void eventManager_OnTurnEnd()
+        {
+            Update();
+        }
 
         public virtual void Update()
         {
-            //ClearHighlightedPath(highlightedPlatforms);
-            //highlightedPlatforms = HighlightPath(position, chasingTarget);
         }
 
         public virtual bool TryToPickup()

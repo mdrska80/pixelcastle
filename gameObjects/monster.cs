@@ -10,7 +10,7 @@ namespace Castles
 {
 	public class Monster : Entity
 	{
-		public override void Update()
+	    public override void Update()
 		{
 			// default monster behavior is to chase a player.
             if (Game.I.player!=null)

@@ -20,7 +20,21 @@ namespace Castles
 
 			handledPlaforms= new List<Platform>();
 			Monsters = new List<Monster>();
+
+            Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
 		}
+
+        void eventManager_OnTurnEnd()
+        {
+            Update();
+
+            foreach (var handledPlaform in Game.I.level.handledPlaforms)
+            {
+                handledPlaform.handled = false;
+            }
+
+            Game.I.level.handledPlaforms.Clear();
+        }
 
         /// <summary>
         /// AllGems
