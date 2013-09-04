@@ -51,6 +51,10 @@ namespace Castles
         /// </summary>
         public List<ISkill> Skills { get; set; }
 
+        /// <summary>
+        /// Experience gained by gaming
+        /// </summary>
+        public Experience Experience { get; set; }
 
 
         /// <summary>

@@ -59,6 +59,7 @@ namespace Castles
             this.resourceManager = resourceManager;
             this.screenManager = new ScreenManager();
             this.eventManager = new EventManager();
+            InitExperienceTable();
 
             themes = new Dictionary<string, Theme>();
 
@@ -69,6 +70,13 @@ namespace Castles
 
             // set initial screen
             screenManager.StartEditor();
+        }
+
+        private void InitExperienceTable()
+        {
+            Experience.expTable.Add(1, 100);
+            Experience.expTable.Add(2, 500);
+            Experience.expTable.Add(3, 1500);
         }
 
         /// <summary>

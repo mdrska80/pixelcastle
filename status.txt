@@ -2,9 +2,7 @@
 - Rendering dungeon based on simple map
 - Dialogs
 - plynule prechody mezi jednotlivymi tily(platformy)
-- experience system
 - secret spots system
-- multiplatformity (linux, windows)
 - rescue missions
 
 0.1
@@ -15,14 +13,16 @@
 	- switches
 	- pressure plates
 	- doors
+- experience
+- experience system
 - dungeon decorations (mrizka, louze na podlaze a dalsi)+
-- cadaver style (single rooms with purposes)
-- set up style
+- set up style (rogue like? ale more rpg, less deadly)
 - outside to inside transitions (gfx defined per tile...)
   - water
   - grass
   - solid rock
   - dungeon
 - editor
+- object interaction with world (firestaff, etc...)
 - moznost odhodit krabicku a tim zatizit desku....coz nasledne...
 
