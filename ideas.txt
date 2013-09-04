@@ -1,11 +1,19 @@
 sokoban like ...push something to pressure pad etc
-partial levels, complete part and then move to another part
-full extensibility
 
-cooperative mode?
+special buildings which will allow to enter secret spots
 
-veci na stenach.. drawn on fixed location
+Identifikace
+------------
+Scroll of identify - must have nebo v "knihovne"
+Predmet bez identifikace muze byt "proklety" a tedy mit i negativni vlastnosti
+Po dostatecne dobe pouzivani se predmet identifikuje sam.
 
--- reload resources
+Proklety predmet
+----------------
+- Scroll of remove curse ... umi vylecit curse, nebo v temple
+- Nejde sundat
+- Ma vetsinou negativni vlastnosti 
 
-special buildings which will allow to enter secret level
+Item - ma vlastnost isCursed
+- Snizi hodnoty 
+
