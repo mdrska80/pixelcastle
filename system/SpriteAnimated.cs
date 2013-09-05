@@ -9,9 +9,10 @@ namespace SFML.Utils
     {
         RenderTarget _renderTarget;
         RenderStates _renderStates;
-        int _fps, _frameWidth, _frameHeight, _frameCount, _currentFrame, _firstFrame, _lastFrame, _interval, _clock;
+        int _fps, _frameWidth, _frameHeight, _frameCount, _currentFrame, _firstFrame, _lastFrame, _interval;
         bool _isAnimated = false;
         bool _isLooped = true;
+        private double _clock;
 
         /// <summary>
         /// Create new SpriteAnimated.
@@ -63,7 +64,7 @@ namespace SFML.Utils
         /// This method is used to update animation state and draw sprite.
         /// You should avoid using Draw() method if you use this.
         /// </summary>
-        public void Update(int delta)
+        public void Update(double delta)
         {
             _clock += delta;
             if (_isAnimated & _clock >= _interval)

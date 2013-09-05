@@ -9,9 +9,7 @@ namespace Castles
     {
         public void Draw(RenderTarget target, RenderStates states)
         {
-            //fps, etc
-            //throw new System.NotImplementedException();
-            Game.I.player.Sprite.CurrentSprite.Update((int)Game.I.delta/1000);
+            Game.I.player.Sprite.CurrentSprite.Update(FPS.SemiDelta);
         }
     }
 }

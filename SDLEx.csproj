@@ -159,6 +159,7 @@
     <Compile Include="program.cs" />
     <Compile Include="game.cs" />
     <!-- Views -->
+    <Compile Include="system\FPS.cs" />
     <Compile Include="system\MapRenderer.cs" />
     <Compile Include="system\SpriteAnimated.cs" />
     <Compile Include="system\SpriteAnimatedEx.cs" />

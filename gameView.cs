@@ -64,6 +64,7 @@ namespace Castles
                 window.SetActive();
                 window.SetKeyRepeatEnabled(true);
                 window.SetMouseCursorVisible(false);
+                //window.SetFramerateLimit(60);
 
 			    g.inputManager.InitWindow(window);
 
@@ -87,12 +88,12 @@ namespace Castles
                 #endregion
 
                 Stopwatch sw = new Stopwatch();
-			    double TotalMicroseconds = 0;
+
+                sw.Start();
 
                 // Start the game loop
                 while (window.IsOpen())
                 {
-                    sw.Start();
                     //long lBegin = sw.ElapsedMilliseconds;
                     // Process events
                     window.DispatchEvents();
@@ -102,24 +103,24 @@ namespace Castles
 
                     // Finally, display the rendered frame on screen
                     window.Display();
+
                     //Console.WriteLine(sw.ElapsedMilliseconds);
-                    TotalMicroseconds = sw.Elapsed.TotalMilliseconds * 1000;
-                    Game.I.delta = TotalMicroseconds;
-                    //Console.WriteLine(Game.I.delta);
+                    FPS.Delta = sw.Elapsed.TotalMilliseconds * 1000;
+
                     if (sumaDelta >= 1000000)
                     {
                         sumaDelta = 0;
-                        Game.I.FPS = frames;
+                        FPS.Value = frames;
                         frames = 0;
-                        Console.WriteLine(Game.I.FPS);
+                        Console.WriteLine(FPS.Value);
                         
                     }
 
-                    sumaDelta += Game.I.delta;
+                    sumaDelta += FPS.Delta;
                     frames++;
 
                     sw.Reset();
-                    //sw.Reset();
+                    sw.Start();
                 }
 			}
 			catch(Exception ex)

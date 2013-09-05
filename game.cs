@@ -38,9 +38,6 @@ namespace Castles
         // statistics
         public int surfaces = 0;
 
-        public double delta = 0;
-        public int FPS = 0;
-
         private static Game _i;
         public static Game I
         {

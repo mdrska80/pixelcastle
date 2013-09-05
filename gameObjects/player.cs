@@ -14,7 +14,7 @@ namespace Castles
         {
             base.InitGfx();
 
-            SpriteAnimated sa = new SpriteAnimated(Game.I.resourceManager.GetTexture("PLAYER"), 48, 64, 30, Game.I.window, RenderStates.Default,0,3,true);
+            SpriteAnimated sa = new SpriteAnimated(Game.I.resourceManager.GetTexture("PLAYER"), 48, 64, 10, Game.I.window, RenderStates.Default,0,3,true);
             Sprite.AddAnimatedSprite("MAIN", sa);
             Sprite.CurrentAnimation = "MAIN";
         }
