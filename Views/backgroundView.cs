@@ -14,7 +14,8 @@ namespace Castles
 
         public void Draw(RenderTarget target, RenderStates states)
         {
-            target.Clear(new Color(30, 32, 37));
+            //target.Clear(new Color(30, 32, 37));
+            target.Clear(Color.White);
         }
     }
 }

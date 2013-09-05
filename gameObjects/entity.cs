@@ -51,6 +51,8 @@ namespace Castles
 
             Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
 
+            Skills = new List<ISkill>();
+
             InitGfx();
             AssignSkills();
         }

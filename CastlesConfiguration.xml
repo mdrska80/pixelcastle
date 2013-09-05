@@ -191,7 +191,7 @@
         <Gfx gfx="Gfx/Gems/GemRed.png" />
 
         <!-- Objects -->
-        <Gfx gfx="Gfx/Items/Barrel.png" />
+        <Gfx code="BARREL" gfx="Gfx/Items/Barrel.png" />
         <Gfx gfx="Gfx/Items/Bucket.png" />
         <Gfx gfx="Gfx/Items/Cauldron.png" />
         <Gfx gfx="Gfx/Items/Box.png" />
@@ -199,7 +199,8 @@
         <Gfx gfx="Gfx/Items/BooobakItem.png" />
 
         <!-- Players -->
-        <Gfx gfx="Gfx/player.png" />
+        <Gfx code="PLAYER" gfx="Gfx/player.png" />
+        <Gfx code="CURSOR" gfx="C.png" />
 
         <!-- Monsters -->
         <Gfx gfx="Gfx/Monsters/TreeFeeding.png" />

@@ -30,7 +30,8 @@ namespace Castles
         {
             Game.I.Screen = Screens.loading;
 
-            Game.I.highScore = Score.LoadHighScore();
+            Game.I.player = new Player();
+
 
             //clear
         }

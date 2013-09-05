@@ -1,6 +1,7 @@
 using System;
 
 // SFML
+using System.Diagnostics;
 using SFML.Window;
 using SFML.Graphics;
 
@@ -15,7 +16,6 @@ namespace Castles
 	/// </summary>
 	public class GameView
 	{
-		private ResourceManager resourceManager;
 		private Game game { get; set; }
 
 		// Views
@@ -36,18 +36,10 @@ namespace Castles
 		// main surface
 		//Surface surf;
 
-		/// <summary>
-		/// constructor
-		/// </summary>
-		public GameView(ResourceManager resourceManager)
-		{
-			this.resourceManager = resourceManager;
+        private double sumaDelta { get; set; }
+        private int frames { get; set; }
 
-			//Events.Tick += new EventHandler<TickEventArgs>(this.Tick);
-			//Events.Quit += new EventHandler<QuitEventArgs>(this.Quit);
-		}
-
-		/// <summary>
+	    /// <summary>
 		/// 
 		/// </summary>
 		public void CreateView(Game g)
@@ -63,12 +55,15 @@ namespace Castles
 
                 // Create the main window
                 RenderWindow window = new RenderWindow(new VideoMode(1024, 768), "SFML window with OpenGL", Styles.Default, contextSettings);
-                window.SetTitle(resourceManager.Texts["WINDOW_CAPTION"]);
 			    game.window = window;
+
+                game.Init();
+                window.SetTitle(Game.I.resourceManager.Texts["WINDOW_CAPTION"]);
 
                 // Make it the active window for OpenGL calls
                 window.SetActive();
                 window.SetKeyRepeatEnabled(true);
+                window.SetMouseCursorVisible(false);
 
 			    g.inputManager.InitWindow(window);
 
@@ -91,9 +86,14 @@ namespace Castles
 
                 #endregion
 
+                Stopwatch sw = new Stopwatch();
+			    double TotalMicroseconds = 0;
+
                 // Start the game loop
                 while (window.IsOpen())
                 {
+                    sw.Start();
+                    //long lBegin = sw.ElapsedMilliseconds;
                     // Process events
                     window.DispatchEvents();
                    
@@ -102,6 +102,24 @@ namespace Castles
 
                     // Finally, display the rendered frame on screen
                     window.Display();
+                    //Console.WriteLine(sw.ElapsedMilliseconds);
+                    TotalMicroseconds = sw.Elapsed.TotalMilliseconds * 1000;
+                    Game.I.delta = TotalMicroseconds;
+                    //Console.WriteLine(Game.I.delta);
+                    if (sumaDelta >= 1000000)
+                    {
+                        sumaDelta = 0;
+                        Game.I.FPS = frames;
+                        frames = 0;
+                        Console.WriteLine(Game.I.FPS);
+                        
+                    }
+
+                    sumaDelta += Game.I.delta;
+                    frames++;
+
+                    sw.Reset();
+                    //sw.Reset();
                 }
 			}
 			catch(Exception ex)
@@ -219,6 +237,7 @@ namespace Castles
                     {
                         window.Draw(backgroundView);
                         window.Draw(debugView);
+                        window.Draw(interfaceView);
 
                         break;
                     }

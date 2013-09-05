@@ -10,15 +10,11 @@ namespace Castles
 	/// </summary>
 	public class Player : Entity
 	{
-    	public Player()
-		{
-		}
-
         public override void InitGfx()
         {
             base.InitGfx();
 
-            SpriteAnimated sa = new SpriteAnimated(Game.I.resourceManager.GetTexture("PLAYER"), 32, 32, 32, Game.I.window, RenderStates.Default);
+            SpriteAnimated sa = new SpriteAnimated(Game.I.resourceManager.GetTexture("PLAYER"), 48, 64, 30, Game.I.window, RenderStates.Default,0,3,true);
             Sprite.AddAnimatedSprite("MAIN", sa);
             Sprite.CurrentAnimation = "MAIN";
         }

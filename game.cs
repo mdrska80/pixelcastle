@@ -38,6 +38,9 @@ namespace Castles
         // statistics
         public int surfaces = 0;
 
+        public double delta = 0;
+        public int FPS = 0;
+
         private static Game _i;
         public static Game I
         {
@@ -50,10 +53,10 @@ namespace Castles
             }
         }
 
-        public void Init(ResourceManager resourceManager)
+        public void Init()
         {
             this.gameStatus = GameStatus.Preparing;
-            this.resourceManager = resourceManager;
+            this.resourceManager = new ResourceManager();
             this.screenManager = new ScreenManager();
             this.eventManager = new EventManager();
             this.inputManager = new InputManager();
@@ -91,7 +94,7 @@ namespace Castles
         public void Start()
         {
 
-            GameView gameView = new GameView(resourceManager);
+            GameView gameView = new GameView();
             gameView.CreateView(this);
             
             this.gameStatus = GameStatus.Started;

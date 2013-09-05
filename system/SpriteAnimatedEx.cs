@@ -19,7 +19,8 @@ namespace SFML.Utils
                 if (Animations.ContainsKey(value))
                 {
                     //reset current animation.
-                    CurrentSprite.Reset();
+                    if (CurrentSprite!=null)
+                        CurrentSprite.Reset();
 
                     //set new animation
                     ca = value;
