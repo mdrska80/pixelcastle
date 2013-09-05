@@ -1,6 +1,5 @@
 using System.Drawing;
 using System.Xml.Serialization;
-using SdlDotNet.Graphics;
 
 namespace Castles
 {
@@ -10,19 +9,19 @@ namespace Castles
         {
             switch(dir)
             {
-            case Direction.up:
+            case Direction.UP:
                 {
                     return new IGPos(position.X+1, position.Y-1, position.Layer);
                 }
-            case Direction.down:
+            case Direction.DOWN:
                 {
                     return new IGPos(position.X-1, position.Y + 1, position.Layer);
                 }
-            case Direction.left:
+            case Direction.LEFT:
                 {
                     return new IGPos(position.X - 1, position.Y, position.Layer);
                 }
-            case Direction.right:
+            case Direction.RIGHT:
                 {
                     return new IGPos(position.X + 1, position.Y, position.Layer);
                 }
@@ -31,24 +30,7 @@ namespace Castles
             return new IGPos(-1,-1,-1);
 
         }
-
-        public static void Text(Point p, string txt, SdlDotNet.Graphics.Font fnt, Surface tSurf, Color c)
-        {
-            Text(p.X, p.Y, txt, fnt, tSurf, c);
-        }
-
-        public static void Text(int X, int Y, string txt, SdlDotNet.Graphics.Font fnt, Surface tSurf, Color c)
-        {
-            Surface m_FontSurface = fnt.Render(txt, Color.FromArgb(98, 87, 67));
-            tSurf.Blit(m_FontSurface, new Point(X + 1, Y));
-            tSurf.Blit(m_FontSurface, new Point(X - 1, Y));
-            tSurf.Blit(m_FontSurface, new Point(X, Y + 1));
-            tSurf.Blit(m_FontSurface, new Point(X, Y - 1));
-
-            m_FontSurface = fnt.Render(txt, c);
-            tSurf.Blit(m_FontSurface, new Point(X, Y));
-        }
-
+        
         public static int CalculateLastGemBonus(int level)
         {
             return 1000 + ((level*4) - 1);

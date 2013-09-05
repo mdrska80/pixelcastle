@@ -65,13 +65,7 @@ namespace Castles
 		[XmlIgnore]
 		public List<Monster> Monsters { get; set; }
 
-		[XmlIgnore]
-		public HoneyCauldron HoneyCauldron;
-
-        [XmlIgnore]
-        public Booobak_item Booobak;
-
-		[XmlIgnore]
+    	[XmlIgnore]
 		public List<Platform> platformsToRemove = new List<Platform>();
 		
 		[XmlIgnore]
@@ -155,28 +149,6 @@ namespace Castles
                 {
                     l.activeGems++;
                     platform.item = new Gem();
-                }
-
-                if (platform.contains.Contains("cauldron"))
-                {
-                    HoneyCauldron hc = new HoneyCauldron(platform.IGPos);
-                    platform.item = hc;
-                    l.HoneyCauldron = hc;
-                }
-
-                if (platform.contains.Contains("bbk"))
-                {
-                    Booobak_item hc = new Booobak_item(platform.IGPos);
-                    platform.item = hc;
-                    l.Booobak = hc;
-                }
-
-                if (platform.contains.Contains("bbkU"))
-                {
-                    Booobak_item hc = new Booobak_item(platform.IGPos);
-                    hc.isUltra = true;
-                    platform.item = hc;
-                    l.Booobak = hc;
                 }
             }
 	    }

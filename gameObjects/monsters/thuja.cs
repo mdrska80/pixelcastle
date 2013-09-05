@@ -1,3 +1,6 @@
+using SFML.Graphics;
+using SFML.Utils;
+
 namespace Castles
 {
     public class Thuja : Monster
@@ -8,13 +11,9 @@ namespace Castles
             speed = (int)MonsterSpeed.SuperFast;
 
             // specific animation collection for this entity
-            aColl.Add(Game.I.resourceManager.GetSprite("Thuja"), 200);
-
-            // add animation to sprite.
-            sprite.Animations.Add("walk", aColl);
-            sprite.CurrentAnimation = "walk";
-            sprite.Animate = true;
-
+            SpriteAnimated sa = new SpriteAnimated(Game.I.resourceManager.GetTexture("THUJA"), 32, 32, 32, Game.I.window, RenderStates.Default);
+            Sprite.AddAnimatedSprite("MAIN", sa);
+            Sprite.CurrentAnimation = "MAIN";
         }
     }
 }

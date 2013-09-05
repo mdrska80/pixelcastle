@@ -1,42 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using SdlDotNet.Graphics;
+﻿using System.Collections.Generic;
+
+using SFML.Graphics;
+using SFML.Window;
 
 namespace Castles
 {
-    public class Board
+    public class Board : Drawable
     {
-        public Surface sBox { get; set; }
-        private Surface m_FontSurface;
+        private Vector2f origin { get; set; }
+        private List<string> data { get; set; }
 
-        private SdlDotNet.Graphics.Font font;
-
-
-        public Board()
+        public Board(Vector2f o, List<string> d)
         {
-            sBox = Game.I.resourceManager.GetGfx("Interface_Box2.png");
-            font = new SdlDotNet.Graphics.Font(@"Arial.ttf", 16);
+            origin = o;
+            data = d;
         }
 
-        public void Update(Surface surf, Point origin, List<string> data)
+        public void Draw(RenderTarget target, RenderStates states)
         {
-            Game.I.surfaces++;
-            surf.Blit(sBox, origin);
+            Sprite s = new Sprite(Game.I.resourceManager.GetTexture("Interface_Box2.png"));
+            s.Position = new Vector2f(origin.X, origin.Y);
+            target.Draw(s);
 
-            int index = 1;
-            foreach (string s in data)
-            {
-                Common.Text(new Point(origin.X + 10, origin.Y + 20 * index), s, font, surf, Color.FromArgb(253, 222, 125));
-                //m_FontSurface = font.Render(s, Color.FromArgb(218, 212, 94));
-                //surf.Blit(m_FontSurface, new Point(origin.X + 10, origin.Y + 20*index));
-                index++;
-            }
-
+            //int index = 1;
+            //foreach (string s in data)
+            //{
+            //    Common.Text(new Point(origin.X + 10, origin.Y + 20 * index), s, font, surf, Color.FromArgb(253, 222, 125));
+            //    //m_FontSurface = font.Render(s, Color.FromArgb(218, 212, 94));
+            //    //surf.Blit(m_FontSurface, new Point(origin.X + 10, origin.Y + 20*index));
+            //    index++;
+            //}
         }
-
-
     }
 }

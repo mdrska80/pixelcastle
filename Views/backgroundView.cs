@@ -3,15 +3,18 @@ using SFML.Window;
 
 namespace Castles
 {
-    public class backgroundView : BaseView
+    public class backgroundView : Drawable
     {
-        public backgroundView(Vector2i origin) : base(origin)
+        private Vector2i origin { get; set; }
+
+        public backgroundView(Vector2i origin)
         {
+            this.origin = origin;
         }
 
-        public override void UpdateView(RenderWindow window)
+        public void Draw(RenderTarget target, RenderStates states)
         {
-            window.Clear(new Color(30, 32, 37));
+            target.Clear(new Color(30, 32, 37));
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using SFML.Window;
 using Castles.Conf;
+using SFML.Graphics;
 
 namespace Castles
 {
@@ -13,11 +14,14 @@ namespace Castles
         public ResourceManager resourceManager;
         public ScreenManager screenManager;
         public EventManager eventManager;
+        public InputManager inputManager;
+
         public Level level;
         public Player player;
         public Score highScore;
 
         public Vector2i boardOrigin;
+        public RenderWindow window;
 
         // what screen we do want
         public Screens Screen = Screens.editor;
@@ -52,9 +56,8 @@ namespace Castles
             this.resourceManager = resourceManager;
             this.screenManager = new ScreenManager();
             this.eventManager = new EventManager();
+            this.inputManager = new InputManager();
             InitExperienceTable();
-
-            themes = new Dictionary<string, Theme>();
 
             resourceManager.Init(CastlesConfigurationReader.GetConfiguration().DataFolder);
             boardOrigin = new Vector2i(500, 200);
@@ -67,6 +70,8 @@ namespace Castles
 
         private void InitExperienceTable()
         {
+            Experience.expTable = new Dictionary<int, long>();
+
             Experience.expTable.Add(1, 100);
             Experience.expTable.Add(2, 500);
             Experience.expTable.Add(3, 1500);

@@ -4,6 +4,7 @@
 - plynule prechody mezi jednotlivymi tily(platformy)
 - secret spots system
 - rescue missions
+- light system
 
 0.1
 - [done] Definovat verzovani (prvni cislo je oznaceni zverejnene verze, druhe je private release)
@@ -26,4 +27,7 @@
 - object interaction with world (firestaff, etc...)
 - moznost odhodit krabicku a tim zatizit desku....coz nasledne...
 - vnitrky budov....vejdu a nahraje se nova mapa.
+- neobjevene lokality jsou v "mlze" - fog of war.
+  -- cerna tma pro neobjevene lokality
+  -- seda tma pro objevene, ale neaktivni lokality
 

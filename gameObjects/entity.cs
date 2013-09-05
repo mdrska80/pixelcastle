@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.Remoting;
-using System.Text;
-using System.Timers;
-using System.Xml.Serialization;
+
 using Castles.Conf;
-using SdlDotNet.Graphics.Sprites;
-using System.Linq;
 
 namespace Castles
 {
-    public class Entity
+    public partial class Entity
     {
         // pathfinding part
         private int MAX = 221;
@@ -30,21 +23,10 @@ namespace Castles
 
         public IGPos positionOriginal { get; set; }
 
-        // statistics
-        public int pickedGems { get; set; }
-        public int steps {get;set;}
-        public bool isPickingGemsAllowed {get;set;}
-
         // helpers
         private Random r {get;set;}
         public int speed { get; set; }
         public int sspeeed { get; set; }
-
-        //gfx part
-        public AnimationCollection aColl {get;set;}
-        public AnimatedSprite sprite {get;set;}
-        public int ShiftX {get;set;}
-        public int ShiftY {get;set;}
 
         /// <summary>
         /// What kind of skills player have.
@@ -62,26 +44,19 @@ namespace Castles
         public Entity()
         {
             r = new Random();
-            aColl = new AnimationCollection();
-            sprite = new AnimatedSprite();
             lives = 1;
             speed = 5;
-            isPickingGemsAllowed = true;
 
             chasingTarget = new IGPos(0,0,0);
 
             Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
 
+            InitGfx();
             AssignSkills();
         }
 
         public virtual void AssignSkills()
         {
-        }
-
-        public virtual void InitGfx()
-        {
-
         }
 
         /// <summary>
@@ -185,15 +160,10 @@ namespace Castles
                 position.Layer = p.layer + (p.elevator != null ? p.elevator.Current : 0);
                 facing = dir;
 
-                steps++;
-
                 if (p.action != null)
                     p.action.Execute(p, this);
 
-                if (isPickingGemsAllowed)
-                {
                     Pickup(p);
-                }            
             }
 
             return p;
@@ -215,8 +185,6 @@ namespace Castles
 
                 if (m != null)
                 {
-                    m.ShiftX = CastlesConfigurationReader.GetConfiguration().GetEntityByType(md.ET).ShiftX;
-                    m.ShiftY = CastlesConfigurationReader.GetConfiguration().GetEntityByType(md.ET).ShiftY;
                     m.position = new IGPos(md.X, md.Y, md.Layer);
                     m.positionOriginal = new IGPos(md.X, md.Y, md.Layer);
 
@@ -248,7 +216,6 @@ namespace Castles
 
                 if (!g.picked)
                 {
-                    pickedGems++;
                     Game.I.level.activeGems--;
                     bool pxxx = p.item.TryToPickup();
                 }
@@ -262,12 +229,12 @@ namespace Castles
 
         public Direction GetDirection(IGPos iGPos, Platform px)
         {
-            if (iGPos.X+1 == px.x && iGPos.Y-1 == px.y) return Direction.up;
-            if (iGPos.X-1 == px.x && iGPos.Y+1 == px.y) return Direction.down;
-            if (iGPos.X-1 == px.x && iGPos.Y == px.y) return Direction.left;
-            if (iGPos.X+1 == px.x && iGPos.Y == px.y) return Direction.right;
+            if (iGPos.X+1 == px.x && iGPos.Y-1 == px.y) return Direction.UP;
+            if (iGPos.X-1 == px.x && iGPos.Y+1 == px.y) return Direction.DOWN;
+            if (iGPos.X-1 == px.x && iGPos.Y == px.y) return Direction.LEFT;
+            if (iGPos.X+1 == px.x && iGPos.Y == px.y) return Direction.RIGHT;
 
-            return Direction.up;
+            return Direction.UP;
         }
 
 
@@ -443,10 +410,10 @@ namespace Castles
                     // Políčka, na které jsme položili jedničky, si zapíšeme do fronty.
                     // Fronta : [4;6][3;7][4;­8][5;7]
 
-                    Platform pUp = CanMove(Direction.up, platform);
-                    Platform pDown = CanMove(Direction.down, platform);
-                    Platform pRight = CanMove(Direction.right, platform);
-                    Platform pLeft = CanMove(Direction.left, platform);
+                    Platform pUp = CanMove(Direction.UP, platform);
+                    Platform pDown = CanMove(Direction.DOWN, platform);
+                    Platform pRight = CanMove(Direction.RIGHT, platform);
+                    Platform pLeft = CanMove(Direction.LEFT, platform);
 
                     Platform pSelected = null;
                     if ((pUp != null) && (pUp.GetPathFindingValue(id) == -1))

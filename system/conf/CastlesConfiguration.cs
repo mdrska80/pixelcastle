@@ -108,10 +108,6 @@ namespace Castles.Conf
         [XmlAttribute]
         public string gfx {get;set;}
 
-
-        [XmlAttribute]
-        public string theme {get;set;}
-
         [XmlAttribute]
         public bool isBlock {get;set;}    
 

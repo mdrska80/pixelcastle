@@ -34,12 +34,6 @@ namespace Castles
 				foreach(Gfx pgfx in CastlesConfigurationReader.GetConfiguration().Gfxs)
 				{
                     Load_Texture(pgfx);
-
-				    if ((pgfx.theme != null)&&(!Game.I.themes.ContainsKey(pgfx.theme)))
-				    {
-                        // init theme
-				        InitTheme(pgfx.theme);
-				    }
 				}
 			}
 
@@ -64,42 +58,6 @@ namespace Castles
             //Load_Sprite("player.png", "player_walk_left_up", 48, 64, 1);
 		}
 
-	    public void InitTheme(string theme)
-	    {
-            //get all platform relevant to themes
-	        var x = (from i in CastlesConfigurationReader.GetConfiguration().Gfxs
-	                 where i.theme == theme
-	                 select i).ToList();
-
-            Theme t = new Theme();
-	        t.name = theme;
-
-	        foreach (Gfx gfx in x)
-	        {
-                Texture tx = Load_Texture(gfx);
-
-
-	            if (gfx.isPit)
-	                t.PitPlatform = s;
-                else if (gfx.isBlock)
-                    t.BlockPlatform = s;
-                else if (gfx.isTeleport)
-                	t.TeleportPlatform = s;
-                else if (gfx.isPressurePlate)
-                	t.PressurePlatePlatform = s;
-                else
-                {
-                    SP sp = new SP();
-                    sp.surf = s;
-                    sp.probability = gfx.probabilty;
-                    t.platforms.Add(sp);
-                }
-	        }
-
-            Game.I.themes.Add(t.name, t);
-
-	    }
-
 	    public Texture Load_Texture(Gfx g)
 		{
 			try
@@ -112,8 +70,14 @@ namespace Castles
                     FileInfo fi = new FileInfo(g.gfx);
 				    if (!Cache_texture.ContainsKey(fi.Name))
 				    {
-				        Cache_texture.Add(g.code, tx);
-                        Console.WriteLine("Added texture: " + g.code);
+				        if (g.code != null)
+				        {
+                            Cache_texture.Add(g.code, tx);
+                            Console.WriteLine("Added texture: " + g.code);
+				        }
+				        else
+                            Console.WriteLine("Texture code is null for filename: " + g.gfx);
+
 				    }
 
 				    return tx;
@@ -135,10 +99,10 @@ namespace Castles
 
 		}
 
-		public Texture GetGfx(string filename)
+		public Texture GetTexture(string code)
 		{
-			if ((!string.IsNullOrEmpty(filename))&&(Cache_texture.ContainsKey(filename)))
-				return Cache_texture[filename];
+			if ((!string.IsNullOrEmpty(code))&&(Cache_texture.ContainsKey(code)))
+				return Cache_texture[code];
 
 			return null;
 		}

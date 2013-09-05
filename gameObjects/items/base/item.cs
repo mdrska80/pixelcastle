@@ -4,22 +4,22 @@ using System.IO;
 using System.Collections;
 using System.Reflection;
 using System.Diagnostics;
-
-using SdlDotNet;
-using SdlDotNet.Audio;
-using SdlDotNet.Graphics;
+using SFML.Graphics;
+using SFML.Utils;
 
 namespace Castles
 {
     public class Item
     {
         public string id = Guid.NewGuid().ToString();
+        public bool isCursed { get; set; }
         public IGPos position {get;set;}
+
+        public SpriteAnimatedEx Sprite { get; set; }
 
         public Item()
         {
             Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
-
             InitGfx();
         }
 
@@ -39,7 +39,9 @@ namespace Castles
 
         public virtual void InitGfx()
         {
+            Sprite = new SpriteAnimatedEx();
 
         }
+
     }
 }

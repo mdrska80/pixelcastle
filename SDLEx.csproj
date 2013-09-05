@@ -35,7 +35,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>Game\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +49,7 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <OutputPath>bin\Release\</OutputPath>
@@ -87,9 +88,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="SdlDotNet">
-      <HintPath>_references\SdlDotNet.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="actions\action_generateMonster.cs" />
@@ -124,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <!-- GameObjects -->
     <Compile Include="gameObjects\entity.cs" />
+    <Compile Include="gameObjects\Entity.gfx.cs">
+      <DependentUpon>entity.cs</DependentUpon>
+    </Compile>
     <Compile Include="gameObjects\monster.cs" />
     <Compile Include="gameObjects\player.cs" />
     <!-- GameObjects, Level related -->
@@ -140,20 +141,10 @@
     <Compile Include="gameObjects\level\platform.cs" />
     <!-- ingame items -->
     <Compile Include="gameObjects\items\base\item.cs" />
-    <Compile Include="gameObjects\items\honeyCauldron.cs" />
-    <Compile Include="gameObjects\items\magicCap.cs" />
     <Compile Include="gameObjects\items\gem.cs" />
     <Compile Include="gameObjects\items\box.cs" />
     <!-- Specific monsters -->
-    <Compile Include="gameObjects\monsters\bees.cs" />
-    <Compile Include="gameObjects\monsters\crystalBall.cs" />
-    <Compile Include="gameObjects\monsters\feedingTree.cs" />
-    <Compile Include="gameObjects\monsters\toughTree.cs" />
-    <Compile Include="gameObjects\monsters\deadTree.cs" />
     <Compile Include="gameObjects\monsters\thuja.cs" />
-    <Compile Include="gameObjects\monsters\testMob.cs" />
-    <Compile Include="gameObjects\monsters\Snowman.cs" />
-    <Compile Include="gameObjects\monsters\Booobak_monster.cs" />
     <!-- actions -->
     <Compile Include="actions\action.cs" />
     <Compile Include="actions\action_teleport.cs" />
@@ -163,13 +154,14 @@
     <!-- Managers -->
     <Compile Include="managers\resourceManager.cs" />
     <Compile Include="managers\screenManager.cs" />
-    <Compile Include="managers\inputController.cs" />
+    <Compile Include="managers\InputManager.cs" />
     <!-- Common -->
     <Compile Include="program.cs" />
     <Compile Include="game.cs" />
     <!-- Views -->
-    <Compile Include="statistics\Profile.cs" />
-    <Compile Include="statistics\Statistics.cs" />
+    <Compile Include="system\MapRenderer.cs" />
+    <Compile Include="system\SpriteAnimated.cs" />
+    <Compile Include="system\SpriteAnimatedEx.cs" />
     <Compile Include="views\base\BaseView.cs" />
     <Compile Include="views\Board.cs" />
     <Compile Include="views\gameoverView.cs" />
@@ -189,7 +181,6 @@
     <Compile Include="tools\enums.cs" />
     <Compile Include="tools\common.cs" />
     <Compile Include="tools\score.cs" />
-    <Compile Include="gameObjects\items\Booobak_item.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CastlesConfiguration.xml">

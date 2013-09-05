@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 
-using SdlDotNet;
-using SdlDotNet.Graphics;
-
 using Castles.Conf;
 
 namespace Castles

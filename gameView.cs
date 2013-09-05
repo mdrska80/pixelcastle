@@ -1,15 +1,10 @@
 using System;
-using System.IO;
-using System.Drawing;
-using System.Collections;
 
 // SFML
-using SFML;
 using SFML.Window;
 using SFML.Graphics;
 
 // Castle references
-using Castles.Conf;
 using Castles.Views;
 
 
@@ -24,12 +19,12 @@ namespace Castles
 		private Game game { get; set; }
 
 		// Views
-		private IView interfaceView { get; set; }
-		private IView levelView { get; set; }
-		private IView backgroundView {get;set;}
-		private IView debugView {get;set;}
-		private IView editorView { get; set; }
-        private IView gameoverView { get; set; }
+		private Drawable interfaceView { get; set; }
+        private Drawable levelView { get; set; }
+        private Drawable backgroundView { get; set; }
+        private Drawable debugView { get; set; }
+        private Drawable editorView { get; set; }
+        private Drawable gameoverView { get; set; }
 
 
 		//Todo views
@@ -69,30 +64,30 @@ namespace Castles
                 // Create the main window
                 RenderWindow window = new RenderWindow(new VideoMode(1024, 768), "SFML window with OpenGL", Styles.Default, contextSettings);
                 window.SetTitle(resourceManager.Texts["WINDOW_CAPTION"]);
+			    game.window = window;
 
                 // Make it the active window for OpenGL calls
                 window.SetActive();
                 window.SetKeyRepeatEnabled(true);
 
+			    g.inputManager.InitWindow(window);
+
                 // Setup event handlers
                 window.Closed += OnClosed;
-                window.KeyPressed += OnKeyPressed;
                 window.LostFocus += window_LostFocus;
                 window.GainedFocus += window_GainedFocus;
                 window.TextEntered += new EventHandler<TextEventArgs>(window_TextEntered);
 
-                window.KeyPressed += new EventHandler<KeyEventArgs>(window_KeyPressed);
-
                 #endregion
 
                 #region Views initializations
-                interfaceView = new interfaceView(new Vector2i(0, 0));
-                levelView = new levelView(Game.I.boardOrigin);
+                interfaceView = new interfaceView();
+                levelView = new levelView();
 
                 backgroundView = new backgroundView(new Vector2i(0, 0));
-                debugView = new debugView(new Vector2i(0, 0));
-                editorView = new editorView(new Vector2i(0, 0));
-                gameoverView = new gameoverView(new Vector2i(0, 0));
+                debugView = new debugView();
+                editorView = new editorView();
+                gameoverView = new gameoverView();
 
                 #endregion
 
@@ -222,8 +217,8 @@ namespace Castles
             //        }
                 default:
                     {
-                        backgroundView.UpdateView(window);
-                        debugView.UpdateView(window);
+                        window.Draw(backgroundView);
+                        window.Draw(debugView);
 
                         break;
                     }
@@ -244,14 +239,5 @@ namespace Castles
             window.Close();
         }
 
-        /// <summary>
-        /// Function called when a key is pressed
-        /// </summary>
-        static void OnKeyPressed(object sender, KeyEventArgs e)
-        {
-            Window window = (Window)sender;
-            if (e.Code == Keyboard.Key.Escape)
-                window.Close();
-        }
 	}
 }

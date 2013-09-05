@@ -109,7 +109,7 @@ namespace Castles
 		{
 			switch(moving.Direction)
 			{
-				case Direction.right:
+				case Direction.RIGHT:
 					{
 						brakeCurrent++;
 						if (brakeCurrent >= brake)
@@ -120,7 +120,7 @@ namespace Castles
 						moving.Current.X++;
 
 					if (moving.Current.X >= moving.To.X)
-						moving.Direction = Direction.left;
+						moving.Direction = Direction.LEFT;
 
 					this.x++;
 
@@ -131,7 +131,7 @@ namespace Castles
 					break;
 				}
 
-				case Direction.left:
+				case Direction.LEFT:
 				{
 					brakeCurrent++;
 					if (brakeCurrent >= brake)
@@ -142,7 +142,7 @@ namespace Castles
 					moving.Current.X--;
 
 					if (moving.Current.X <= moving.From.X)
-						moving.Direction = Direction.right;
+						moving.Direction = Direction.RIGHT;
 
 					this.x--;
 
@@ -170,12 +170,12 @@ namespace Castles
 		{
 			switch (elevator.Direction)
 			{
-				case Direction.up:
+				case Direction.UP:
 					{
 						int elevatorPositionOld = elevator.Current++;
 
 						if (elevator.Current >= elevator.High)
-							elevator.Direction = Direction.down;
+							elevator.Direction = Direction.DOWN;
 
 					    if (Game.I.player != null)
 					    {
@@ -200,12 +200,12 @@ namespace Castles
 						break;
 					}
 
-				case Direction.down:
+				case Direction.DOWN:
 					{
 						elevator.Current--;
 
 						if (elevator.Current <= elevator.Low)
-							elevator.Direction = Direction.up;
+							elevator.Direction = Direction.UP;
 
 						//entity present?
 					    if (Game.I.player != null)
