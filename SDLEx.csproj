@@ -160,7 +160,8 @@
     <Compile Include="game.cs" />
     <!-- Views -->
     <Compile Include="system\FPS.cs" />
-    <Compile Include="system\MapRenderer.cs" />
+    <Compile Include="system\TileEngine\MainTileProviders.cs" />
+    <Compile Include="system\TileEngine\MapRenderer.cs" />
     <Compile Include="system\SpriteAnimated.cs" />
     <Compile Include="system\SpriteAnimatedEx.cs" />
     <Compile Include="views\base\BaseView.cs" />

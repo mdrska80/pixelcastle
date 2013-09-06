@@ -62,6 +62,30 @@ namespace Castles
 
                         }
 
+                        else if (e.Code == Keyboard.Key.D)
+                        {
+                            Game.I.gameView.mapView.X += 10;
+                        }
+                        else if (e.Code == Keyboard.Key.A)
+                        {
+                            Game.I.gameView.mapView.X -= 10;
+                        }
+                        else if (e.Code == Keyboard.Key.W)
+                        {
+                            Game.I.gameView.mapView.Y -= 10;
+                        }
+                        else if (e.Code == Keyboard.Key.S)
+                        {
+                            Game.I.gameView.mapView.Y += 10;
+                        }
+
+                        else if (e.Code == Keyboard.Key.Q)
+                        {
+                            Vector2i v = Mouse.GetPosition(Game.I.window);
+                            Vector2i vv = Game.I.gameView.mapView.renderer.GetTile_Absolute(new Vector2f(v.X, v.Y));
+                        }
+
+
                         break;
                     }
 

@@ -9,7 +9,7 @@ namespace Castles
     {
         public void Draw(RenderTarget target, RenderStates states)
         {
-            Game.I.player.Sprite.CurrentSprite.Update(FPS.SemiDelta);
+           // Game.I.player.Sprite.CurrentSprite.Update(FPS.SemiDelta);
         }
     }
 }

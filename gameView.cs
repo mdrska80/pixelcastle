@@ -25,9 +25,10 @@ namespace Castles
         private Drawable debugView { get; set; }
         private Drawable editorView { get; set; }
         private Drawable gameoverView { get; set; }
+        public  mapView mapView { get; set; }
 
 
-		//Todo views
+	    //Todo views
 		private IView scoreView {get;set;}
 		private IView mainmenuView {get;set;}
 
@@ -84,6 +85,7 @@ namespace Castles
                 debugView = new debugView();
                 editorView = new editorView();
                 gameoverView = new gameoverView();
+                mapView = new mapView();
 
                 #endregion
 
@@ -192,8 +194,6 @@ namespace Castles
 		{
 			//this.surf.Fill(new Rectangle(new Point(0, 0), surf.Size), Color.Black);
 
-			Game.I.surfaces = 0;
-
             //if (surf == null) return; //nothing to update
 
             switch (Game.I.Screen)
@@ -237,6 +237,7 @@ namespace Castles
                 default:
                     {
                         window.Draw(backgroundView);
+                        window.Draw(mapView);
                         window.Draw(debugView);
                         window.Draw(interfaceView);
 

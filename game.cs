@@ -26,6 +26,8 @@ namespace Castles
         public Screens Screen = Screens.editor;
         public bool isPaused = false;
 
+        public GameView gameView { get; set; }
+
         #region editing_stuff
             //editor, why -57? ... :)
             //public int editingLayer = -57;
@@ -33,9 +35,6 @@ namespace Castles
             // what am I currently editing?
             public EditorObjects editingObject = EditorObjects.platforms; 
         #endregion
-
-        // statistics
-        public int surfaces = 0;
 
         private static Game _i;
         public static Game I
@@ -90,7 +89,7 @@ namespace Castles
         public void Start()
         {
 
-            GameView gameView = new GameView();
+            gameView = new GameView();
             gameView.CreateView(this);
             
             this.gameStatus = GameStatus.Started;

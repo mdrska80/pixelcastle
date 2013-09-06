@@ -2,7 +2,7 @@ using System;
 using SFML.Graphics;
 using SFML.Window;
 
-namespace SFML.Utils
+namespace SFML.Utils.TileEngine
 {
     /// <summary>
     /// Functions that provides color/texture rectangle data from tile map (or other source)
@@ -12,7 +12,7 @@ namespace SFML.Utils
     /// <summary>
     /// Fast and universal renderer of tilemaps
     /// </summary>
-    class MapRenderer : Drawable
+    public class MapRenderer : Drawable
     {
         private readonly float TileSize;
         public readonly int Layers;
@@ -91,7 +91,7 @@ namespace SFML.Utils
         /// Sets offset
         /// </summary>
         /// <param name="v">World position of top left corner of the screen</param>
-        private void SetCorner(Vector2f v)
+        public void SetCorner(Vector2f v)
         {
             var tile = GetTile(v);
             var dif = tile - offset;
@@ -114,10 +114,19 @@ namespace SFML.Utils
             else RefreshLocal(0, 0, width, -dif.Y);
         }
 
+        public Vector2i GetTile_Absolute(Vector2f pos)
+        {
+            Vector2i v = GetTile(pos);
+            v.X += offset.X;
+            v.Y += offset.Y;
+
+            return v;
+        }
+
         /// <summary>
         /// Transforms from world size to to tile that is under that position
         /// </summary>
-        private Vector2i GetTile(Vector2f pos)
+        public Vector2i GetTile(Vector2f pos)
         {
             var x = (int) (pos.X/TileSize);
             var y = (int) (pos.Y/TileSize);
