@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="actions\action_detectHidden.cs" />
     <Compile Include="actions\action_generateMonster.cs" />
+    <Compile Include="actions\action_Multiple.cs" />
     <Compile Include="actions\action_togglePlatform.cs" />
     <Compile Include="system\IAction.cs" />
     <Compile Include="commands\Command_NotRecognized.cs" />
@@ -138,7 +139,7 @@
     </Compile>
     <Compile Include="system\entityDef.cs" />
     <Compile Include="gameObjects\level\moving.cs" />
-    <Compile Include="gameObjects\level\platform.cs" />
+    <Compile Include="gameObjects\level\Tile.cs" />
     <!-- ingame items -->
     <Compile Include="gameObjects\items\base\item.cs" />
     <Compile Include="gameObjects\items\gem.cs" />

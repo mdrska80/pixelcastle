@@ -60,7 +60,7 @@ namespace Castles.Conf
         public string Gfx {get;set;}
 
         [XmlAttribute]
-        public PlatformType Type {get;set;}
+        public TileType Type {get;set;}
     }
 
     public class Bonuses

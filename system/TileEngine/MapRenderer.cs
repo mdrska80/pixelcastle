@@ -2,8 +2,48 @@ using System;
 using SFML.Graphics;
 using SFML.Window;
 
+// TODO animated tiles....
+// - water
+// - lava
+// - etc
+
+//move camera to point/sprite...
+
 namespace SFML.Utils.TileEngine
 {
+    public enum LayerTypes
+    {
+        /// <summary>
+        /// Complete background, drawn first
+        /// </summary>
+        Paralax,
+
+        /// <summary>
+        /// Trees
+        /// </summary>
+        Background,
+
+        /// <summary>
+        /// Houses, etc.
+        /// </summary>
+        Physics,
+
+        /// <summary>
+        /// items
+        /// </summary>
+        Items,
+
+        /// <summary>
+        /// Player, Monsters, NPCs
+        /// </summary>
+        Entities,
+
+        /// <summary>
+        /// Clouds, etc...
+        /// </summary>
+        ForegroundObjects
+    }
+
     /// <summary>
     /// Functions that provides color/texture rectangle data from tile map (or other source)
     /// </summary>
@@ -40,7 +80,7 @@ namespace SFML.Utils.TileEngine
         /// <param name="provider">Accesor to tilemap data</param>
         /// <param name="tileSize">Size of one tile</param>
         /// <param name="layers">Numbers of layers</param>
-        public MapRenderer(Texture texture, TileProvider provider, float tileSize = 16, int layers = 1)
+        public MapRenderer(Texture texture, TileProvider provider, float tileSize = 32, int layers = 1)
         {
             if(provider == null || layers <= 0) throw new ArgumentException();
             this.provider = provider;

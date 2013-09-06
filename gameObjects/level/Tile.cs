@@ -3,30 +3,33 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
+//map from tiles and also local data.
 namespace Castles
 {
-    public class Platform 
+    public class Tile 
 	{
+        /// <summary>
+        /// Id for animated ones
+        /// </summary>
 		[XmlAttribute]
-		public string gfx {get;set;}
+		public string code {get;set;}
 
-		[XmlAttribute]
+        /// <summary>
+        /// Id for non animated ones, if gid is not filled it means it was replaced
+        /// by code which point to animated sprite...so use that animated sprite
+        /// insead of.
+        /// </summary>
+        [XmlAttribute]
+        public int gid { get; set; }
+
+        [XmlAttribute]
 		public int x {get;set;}
 
 		[XmlAttribute]
 		public int y {get;set;}
 
 		[XmlAttribute]
-		public PlatformType type {get;set;}
-
-		[XmlAttribute]
-		public int ColumnHeight {get;set;}
-
-        [XmlAttribute]
-        public int ShiftX { get; set; }
-        
-        [XmlAttribute]
-        public int ShiftY { get; set; }
+		public TileType type {get;set;}
 
 	    /// <summary>
 		/// What is on the platform, definition
@@ -40,26 +43,20 @@ namespace Castles
 
 		// monster can pass this point
 		[XmlAttribute]
-		public bool monsterCannotPass {get;set;}
+		public bool noMonsterPass {get;set;}
 		
 		[XmlAttribute]
-		public bool playerCannotPass {get;set;}
+		public bool noPlayerPass {get;set;}
 
         [XmlAttribute]
         public bool isPit { get; set; }
 
-	    ///<summary>Parent layer id</summary>
-		[XmlAttribute]
 		public int layer { get; set; }
 
 		public Elevator elevator {get;set;}
 		public Moving moving {get;set;}
 		public Generator generator {get;set;}
 		public BaseAction action {get;set;}
-
-        /// <summary>
-        /// Object for door
-        /// </summary>
         public Door door { get; set; }
 
         [XmlIgnore]

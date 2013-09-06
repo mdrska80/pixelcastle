@@ -5,12 +5,16 @@ using System.Text;
 
 namespace Castles.actions
 {
-    public class Action_DetectHidden : BaseAction
+    public class action_Multiple : BaseAction
     {
+        public List<BaseAction> actions { get; set; }
+
         public override void Execute(Tile p, Entity e)
         {
-            //increase clairvoyance skill for a while
-
+            foreach (BaseAction ba in actions)
+            {
+                ba.Execute(p,e);
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Castles
         /// </summary>
 		public void Rotate()
 		{
-            foreach (Platform p in Platforms)
+            foreach (Tile p in Platforms)
             {
                 int i, j;
 
@@ -53,7 +53,7 @@ namespace Castles
         /// </summary>
 	    public void MoveUp()
 	    {
-            foreach (Platform p in Platforms)
+            foreach (Tile p in Platforms)
             {
                 p.y--;
             }
@@ -63,7 +63,7 @@ namespace Castles
 
 	    public void MoveDown()
 	    {
-            foreach (Platform p in Platforms)
+            foreach (Tile p in Platforms)
             {
                 p.y++;
             }
@@ -73,7 +73,7 @@ namespace Castles
 
 	    public void MoveRight()
 	    {
-            foreach (Platform p in Platforms)
+            foreach (Tile p in Platforms)
             {
                 p.x++;
             }
@@ -83,7 +83,7 @@ namespace Castles
 
 	    public void MoveLeft()
 	    {
-            foreach (Platform p in Platforms)
+            foreach (Tile p in Platforms)
             {
                 p.x--;
             }

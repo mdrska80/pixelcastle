@@ -8,17 +8,23 @@ namespace SFML.Utils.TileEngine
 {
     public class MainTileProviders
     {
-        public static void TileProvider(int x, int y, int layer, out Color color, out IntRect rec)
+        public static void ColorTileProvider(int x, int y, int layer, out Color color, out IntRect rec)
         {
             if (x==1 && y == 1)
                 color = Color.Red;
                 
             else
             {
-                color = new Color((byte)(x * 10), (byte)(y * 10), (byte)(255 - (byte)(y * 10)));
+                color = new Color((byte)(x * 15), (byte)(y * 15), (byte)(255 - (byte)(y * 15)));
             }
 
-            rec = new IntRect(0,0,1,1);
+            //texture coordinates....
+            rec = new IntRect(0,0,32,32);
+        }
+
+        public static void TestSpriteProvider(int x, int y, int layer, out SpriteAnimated sprite)
+        {
+            sprite = null;
         }
     }
 }

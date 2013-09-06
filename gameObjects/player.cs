@@ -34,10 +34,10 @@ namespace Castles
 			//highlightedPlatforms = HighlightPath(position, new IGPos(0, 0, 0));
 		}
 
-		public override Platform Move(Direction dir)
+		public override Tile Move(Direction dir)
 		{
 			// na jakou plaformu chci vkrocit?
-			Platform p = base.Move(dir);
+			Tile p = base.Move(dir);
 
 			// existuje takova plarforma?
 			if (p != null)
@@ -79,7 +79,7 @@ namespace Castles
 		    }
 		}
 
-		public override bool Pickup (Platform p)
+		public override bool Pickup (Tile p)
 		{
 		    return true;
 		}

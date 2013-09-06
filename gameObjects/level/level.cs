@@ -17,7 +17,7 @@ namespace Castles
 			// default behavior
 			level = 1;
 
-			handledPlaforms= new List<Platform>();
+			handledPlaforms= new List<Tile>();
 			Monsters = new List<Monster>();
 
             Game.I.eventManager.OnTurnEnd += eventManager_OnTurnEnd;
@@ -48,7 +48,7 @@ namespace Castles
 		[XmlAttribute]
 		public string name {get;set;}
 
-        public List<Platform> Platforms{ get; set; }
+        public List<Tile> Platforms{ get; set; }
 
 		public List<EntityDef> EntityDefs { get; set; }
 
@@ -57,10 +57,10 @@ namespace Castles
 		public List<Monster> Monsters { get; set; }
 
     	[XmlIgnore]
-		public List<Platform> platformsToRemove = new List<Platform>();
+		public List<Tile> platformsToRemove = new List<Tile>();
 		
 		[XmlIgnore]
-		public List<Platform> handledPlaforms { get; set; }
+		public List<Tile> handledPlaforms { get; set; }
 
 		[XmlIgnore]
 		public int activeGems { get; set; }
@@ -68,7 +68,7 @@ namespace Castles
 		[XmlIgnore]
 		public int level { get; set; }
 
-		public Platform GetPlatform(int x, int y, int layer, bool excludeElevators = false)
+		public Tile GetPlatform(int x, int y, int layer, bool excludeElevators = false)
 		{
 		    if (excludeElevators)
 		        return (from i in Platforms
@@ -80,7 +80,7 @@ namespace Castles
 						select i).FirstOrDefault();
 		}
 
-        public List<Platform> GetElevators(int x, int y)
+        public List<Tile> GetElevators(int x, int y)
         {
             return (from i in Platforms
                     where i.x == x && i.y == y && i.elevator!=null
@@ -88,7 +88,7 @@ namespace Castles
         }
 
 
-		public Platform GetPlatform(IGPos pos)
+		public Tile GetPlatform(IGPos pos)
 		{
 			return GetPlatform(pos.X, pos.Y, pos.Layer);
 		}
@@ -101,7 +101,7 @@ namespace Castles
             if (l == null)
             {  
                 l = new Level();
-                l.Platforms = new List<Platform>();
+                l.Platforms = new List<Tile>();
             }
 
 
@@ -179,7 +179,7 @@ goals = not defined at this moment. This will be used to trigger alternative lev
 name = Level name, which will be visible on the game board.
 theme = Level name, which will be visible on the game board.
 
-Platform
+Tile
 ========
 gfx = for custom GFX on specific platform
 x = x
@@ -234,7 +234,7 @@ layer = layer
 		{
 			//update all platforms and other level items
 
-			foreach (Platform p in Platforms)
+			foreach (Tile p in Platforms)
 			{
 				p.Update();
 			}
@@ -250,7 +250,7 @@ layer = layer
 			Sort();
 		}
 
-        public void RemovePlatform(Platform p)
+        public void RemovePlatform(Tile p)
         {
             var x = (from i in Platforms
                      where i.x == p.x && i.y == p.y && p.layer == i.layer
@@ -269,27 +269,6 @@ layer = layer
 	        return 30;
 	    }
 
-
-
-	    /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
-        public Platform CreatePlatform(int x, int y, int l)
-        {
-            Platform ppp =  new Platform();
-            ppp.gfx = null;
-            ppp.x = x;
-            ppp.y = y;
-            ppp.type = CastlesConfigurationReader.GetConfiguration().Editor.DefaultPlatform.Type;
-            ppp.contains = "";
-            ppp.layer = l;
-
-            return ppp;
-        }
-
 		/// <summary>
 		/// Metoda vrati monstum, ktere na danem policku aktualne stoji.
 		/// </summary>
@@ -306,58 +285,58 @@ layer = layer
 						 select i).FirstOrDefault();
 		}
 
-	    public static Platform CheckPlatform(IGPos desiredPosition, IGPos position)
+	    public static Tile CheckPlatform(IGPos desiredPosition, IGPos position)
 		{
 
 			//search for platform on same layer
-			Platform pPlatform = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer, true);
+			Tile pTile = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer, true);
 
-			if (pPlatform == null)
+			if (pTile == null)
 			{
 				// search for platform on higher layer
-                pPlatform = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer + 1, true);
+                pTile = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer + 1, true);
 
-				if (pPlatform == null)
+				if (pTile == null)
 				{
 					// search for platform on lower layer
-                    pPlatform = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer - 1, true);
+                    pTile = Game.I.level.GetPlatform(desiredPosition.X, desiredPosition.Y, position.Layer - 1, true);
 				}
 			}
 
-	        if (pPlatform == null)
+	        if (pTile == null)
 	        {
                 //we can have multiple elevators....
-	            List<Platform> pElevatorPlatforms = Game.I.level.GetElevators(desiredPosition.X, desiredPosition.Y);
+	            List<Tile> pElevatorPlatforms = Game.I.level.GetElevators(desiredPosition.X, desiredPosition.Y);
 
 	            if ((pElevatorPlatforms != null) && (pElevatorPlatforms.Count > 0))
 	            {
                     //je to dostatecne blizko tomu co stojim?
-	                Platform ppp = pElevatorPlatforms[0];
-	                if (ppp.elevator.Current == position.Layer) pPlatform = ppp;
-                    if (ppp.elevator.Current + 1 == position.Layer) pPlatform = ppp;
-                    if (ppp.elevator.Current - 1 == position.Layer) pPlatform = ppp;
+	                Tile ppp = pElevatorPlatforms[0];
+	                if (ppp.elevator.Current == position.Layer) pTile = ppp;
+                    if (ppp.elevator.Current + 1 == position.Layer) pTile = ppp;
+                    if (ppp.elevator.Current - 1 == position.Layer) pTile = ppp;
 	            }
 	        }
 
 	        // if no platform we cannot simply go there
-			if (pPlatform == null) return null;
+			if (pTile == null) return null;
 
 			//we have platform...
 
 			// is it elevator? Can we get on?
-			if (pPlatform.elevator != null)
+			if (pTile.elevator != null)
 			{
 
-				if (pPlatform.elevator.Current == position.Layer) return pPlatform;
-				if (pPlatform.elevator.Current == position.Layer - 1) return pPlatform;
-				if (pPlatform.elevator.Current == position.Layer + 1) return pPlatform;
+				if (pTile.elevator.Current == position.Layer) return pTile;
+				if (pTile.elevator.Current == position.Layer - 1) return pTile;
+				if (pTile.elevator.Current == position.Layer + 1) return pTile;
 			}
 
 			// is platform moving? Can we get on?
-			if (pPlatform.moving != null)
+			if (pTile.moving != null)
 			{
-				if (!(pPlatform.moving.Current.X == desiredPosition.X &&
-					pPlatform.moving.Current.Y == desiredPosition.Y))
+				if (!(pTile.moving.Current.X == desiredPosition.X &&
+					pTile.moving.Current.Y == desiredPosition.Y))
 				{
 					//platform is somewhere else...we cannot get on.
 					return null;
@@ -365,7 +344,7 @@ layer = layer
 			}
 
 			// if we are here no other universal obstackle is in place
-			return pPlatform;
+			return pTile;
 		}
 
 		public void ClearPathFindingInfo()

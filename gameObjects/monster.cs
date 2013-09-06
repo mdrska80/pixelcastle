@@ -21,7 +21,7 @@ namespace Castles
 			{
 				if (highlightedPlatforms!=null && highlightedPlatforms.Count > 1)
 				{
-					Platform px = highlightedPlatforms[highlightedPlatforms.Count - 2];
+					Tile px = highlightedPlatforms[highlightedPlatforms.Count - 2];
 
 					// px je kterym smerem od mista kde stojim?
 					Direction dir = GetDirection(this.position, px);
@@ -30,9 +30,9 @@ namespace Castles
 			}
 		}
 
-	    public override Platform Move(Direction dir)
+	    public override Tile Move(Direction dir)
 	    {
-	        Platform p = base.Move(dir);
+	        Tile p = base.Move(dir);
 	        Player pl = Game.I.player;
 
 	        if (p != null)

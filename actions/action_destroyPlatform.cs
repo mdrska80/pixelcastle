@@ -4,7 +4,7 @@ namespace Castles
 {
 	public class Action_DestroyPlatform : BaseAction
 	{
-		public override void Execute(Platform p, Entity e)
+		public override void Execute(Tile p, Entity e)
 		{
 			if (IsActive)
 			{
@@ -13,7 +13,7 @@ namespace Castles
 				// Param2 = y
 				// Param3 = layer
 
-			    Platform px = Game.I.level.GetPlatform(Param1.ToInt(), Param2.ToInt(), Param3.ToInt());
+			    Tile px = Game.I.level.GetPlatform(Param1.ToInt(), Param2.ToInt(), Param3.ToInt());
                 Game.I.level.RemovePlatform(px);
 
 				if (IsOneTimeAction)

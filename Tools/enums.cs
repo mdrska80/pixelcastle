@@ -79,7 +79,7 @@ namespace Castles
         // posible new monsters
     }    
 
-    public enum PlatformType
+    public enum TileType
     {
         // Column, from point where detected - down
         Column,

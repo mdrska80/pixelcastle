@@ -24,7 +24,7 @@ namespace Castles
 		public bool IsOneTimeAction {get;set;}
 		public bool IsActive {get;set;}
 
-		public virtual void Execute(Platform p, Entity e)
+		public virtual void Execute(Tile p, Entity e)
 		{
 		}
 	}

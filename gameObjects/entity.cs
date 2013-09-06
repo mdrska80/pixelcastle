@@ -12,7 +12,7 @@ namespace Castles
         // pathfinding part
         private int MAX = 221;
         public string id = Guid.NewGuid().ToString();
-        protected List<Platform> highlightedPlatforms = new List<Platform>();
+        protected List<Tile> highlightedPlatforms = new List<Tile>();
 
         // entity properties part
         public IGPos chasingTarget { get; set; }
@@ -113,7 +113,7 @@ namespace Castles
             highlightedPlatforms = HighlightPath(position, chasingTarget);
         }
 
-        public virtual Platform CanMove(Direction dir)
+        public virtual Tile CanMove(Direction dir)
         {
             if (CheckSkill("SKILL_MOVE")!=null)
             {
@@ -123,7 +123,7 @@ namespace Castles
             return null;
         }
 
-        public virtual Platform CanMove(Direction dir, IGPos pos)
+        public virtual Tile CanMove(Direction dir, IGPos pos)
         {
             if (CheckSkill("SKILL_MOVE") != null)
             {
@@ -133,7 +133,7 @@ namespace Castles
             return null;
         }
 
-        public Platform CanMove(Direction dir, Platform p)
+        public Tile CanMove(Direction dir, Tile p)
         {
             if (CheckSkill("SKILL_MOVE") != null)
             {
@@ -151,9 +151,9 @@ namespace Castles
         /// </summary>
         /// <param name="dir"></param>
         /// <returns></returns>
-        public virtual Platform Move(Direction dir)
+        public virtual Tile Move(Direction dir)
         {
-            Platform p = CanMove(dir);
+            Tile p = CanMove(dir);
 
             if (p!=null)
             {
@@ -210,7 +210,7 @@ namespace Castles
             lives--;
         }
 
-        public virtual bool Pickup(Platform p)
+        public virtual bool Pickup(Tile p)
         {
             if (p.item is Gem)
             {
@@ -229,7 +229,7 @@ namespace Castles
             return false;
         }
 
-        public Direction GetDirection(IGPos iGPos, Platform px)
+        public Direction GetDirection(IGPos iGPos, Tile px)
         {
             if (iGPos.X+1 == px.x && iGPos.Y-1 == px.y) return Direction.UP;
             if (iGPos.X-1 == px.x && iGPos.Y+1 == px.y) return Direction.DOWN;
@@ -246,7 +246,7 @@ namespace Castles
         /// Clears the highlighted path.
         /// </summary>
         /// <param name="pth">Pth.</param>
-        public void ClearHighlightedPath(List<Platform> pth)
+        public void ClearHighlightedPath(List<Tile> pth)
         {
             if (pth != null)
             {
@@ -264,11 +264,11 @@ namespace Castles
         /// <returns>The path.</returns>
         /// <param name="from">From.</param>
         /// <param name="to">To.</param>
-        public List<Platform> HighlightPath(IGPos from, IGPos to)
+        public List<Tile> HighlightPath(IGPos from, IGPos to)
         {
             ClearHighlightedPath(highlightedPlatforms);
 
-            List<Platform> pth = FindPath(from, to);
+            List<Tile> pth = FindPath(from, to);
 
             if (pth != null)
             {
@@ -293,32 +293,32 @@ namespace Castles
         /// <returns>The path.</returns>
         /// <param name="from">From.</param>
         /// <param name="to">To.</param>
-        public List<Platform> FindPath(IGPos from, IGPos to)
+        public List<Tile> FindPath(IGPos from, IGPos to)
         {
             // 
             // http://www.devbook.cz/algoritmus-sireni-do-sirky-vlna-hledani-cesty-v-bludisti
 
-            Dictionary<int, List<Platform>> qTodo = new Dictionary<int, List<Platform>>();
+            Dictionary<int, List<Tile>> qTodo = new Dictionary<int, List<Tile>>();
 
 
-            List<Platform> lp = new List<Platform>();
-            Platform ppp = Game.I.level.GetPlatform(from);
+            List<Tile> lp = new List<Tile>();
+            Tile ppp = Game.I.level.GetPlatform(from);
             if (ppp == null)
                 return null;
 
             lp.Add(ppp);
             qTodo.Add(1, lp);
 
-            //List<  t<int, List<Platform>> qTodo = new 
+            //List<  t<int, List<Tile>> qTodo = new 
 
-            //Queue<Tuple<int, Platform>> qTodo = new Queue<Tuple<int, Platform>>();
-            //qTodo.Enqueue(new Tuple<int, Platform>(0,Game.I.level.GetPlatform(from)));
-            Queue<Tuple<int, Platform>> qProcessed = new Queue<Tuple<int, Platform>>();
+            //Queue<Tuple<int, Tile>> qTodo = new Queue<Tuple<int, Tile>>();
+            //qTodo.Enqueue(new Tuple<int, Tile>(0,Game.I.level.GetPlatform(from)));
+            Queue<Tuple<int, Tile>> qProcessed = new Queue<Tuple<int, Tile>>();
             int depth = 0;
             int maxValue = CheckSurroundings(qTodo, qProcessed, to, ++depth);
 
-            List<Tuple<int, Platform>> processedList = qProcessed.ToList();
-            List<Platform> lPlatformsOnPath = new List<Platform>();
+            List<Tuple<int, Tile>> processedList = qProcessed.ToList();
+            List<Tile> lPlatformsOnPath = new List<Tile>();
 
             lPlatformsOnPath.Add(Game.I.level.GetPlatform(to));
 
@@ -333,14 +333,14 @@ namespace Castles
             while (true)
             {
                 processingValue--;
-                Platform previousPlatform = lPlatformsOnPath[lPlatformsOnPath.Count - 1];
+                Tile previousTile = lPlatformsOnPath[lPlatformsOnPath.Count - 1];
 
-                if (previousPlatform != null)
+                if (previousTile != null)
                 {
                     var xUp = (from i in processedList
                                where i.Item1 == processingValue &&
-                                     i.Item2.x == previousPlatform.x + 1 &&
-                                     i.Item2.y == previousPlatform.y - 1
+                                     i.Item2.x == previousTile.x + 1 &&
+                                     i.Item2.y == previousTile.y - 1
                                select i
                               ).FirstOrDefault();
 
@@ -348,22 +348,22 @@ namespace Castles
 
                     var xDown = (from i in processedList
                                  where i.Item1 == processingValue &&
-                                       i.Item2.x == previousPlatform.x - 1 &&
-                                       i.Item2.y == previousPlatform.y + 1
+                                       i.Item2.x == previousTile.x - 1 &&
+                                       i.Item2.y == previousTile.y + 1
                                  select i
                                 ).FirstOrDefault();
 
                     var xLeft = (from i in processedList
                                  where i.Item1 == processingValue &&
-                                       i.Item2.x == previousPlatform.x - 1 &&
-                                       i.Item2.y == previousPlatform.y
+                                       i.Item2.x == previousTile.x - 1 &&
+                                       i.Item2.y == previousTile.y
                                  select i
                                 ).FirstOrDefault();
 
                     var xRight = (from i in processedList
                                   where i.Item1 == processingValue &&
-                                        i.Item2.x == previousPlatform.x + 1 &&
-                                        i.Item2.y == previousPlatform.y
+                                        i.Item2.x == previousTile.x + 1 &&
+                                        i.Item2.y == previousTile.y
                                   select i
                                  ).FirstOrDefault();
 
@@ -387,20 +387,20 @@ namespace Castles
         /// <param name="qProcessed">Q processed.</param>
         /// <param name="to">To.</param>
         /// <param name="value">Value.</param>
-        private int CheckSurroundings(Dictionary<int, List<Platform>> qTodo, Queue<Tuple<int, Platform>> qProcessed, IGPos to, int value)
+        private int CheckSurroundings(Dictionary<int, List<Tile>> qTodo, Queue<Tuple<int, Tile>> qProcessed, IGPos to, int value)
         {
             //add new layer
-            qTodo.Add(value+1, new List<Platform>());
+            qTodo.Add(value+1, new List<Tile>());
 
             // Dejme tomu, že se potřebujeme dostat z bodu S do bodu F. Do fronty tedy zapíšeme bod S a dáme mu hodnotu 0.
             // Fronta : [4;7]
-            List<Platform> lp = qTodo[value];
+            List<Tile> lp = qTodo[value];
             foreach (var platform in lp)
             {
                 if (platform == null)
                     Console.WriteLine("problem");
                 // mark as processed
-                qProcessed.Enqueue(new Tuple<int, Platform>(value, platform));
+                qProcessed.Enqueue(new Tuple<int, Tile>(value, platform));
 
                 if (platform != null)
                 {
@@ -412,12 +412,12 @@ namespace Castles
                     // Políčka, na které jsme položili jedničky, si zapíšeme do fronty.
                     // Fronta : [4;6][3;7][4;­8][5;7]
 
-                    Platform pUp = CanMove(Direction.UP, platform);
-                    Platform pDown = CanMove(Direction.DOWN, platform);
-                    Platform pRight = CanMove(Direction.RIGHT, platform);
-                    Platform pLeft = CanMove(Direction.LEFT, platform);
+                    Tile pUp = CanMove(Direction.UP, platform);
+                    Tile pDown = CanMove(Direction.DOWN, platform);
+                    Tile pRight = CanMove(Direction.RIGHT, platform);
+                    Tile pLeft = CanMove(Direction.LEFT, platform);
 
-                    Platform pSelected = null;
+                    Tile pSelected = null;
                     if ((pUp != null) && (pUp.GetPathFindingValue(id) == -1))
                     {
                         pUp.pathfindingValues[id] = value;
