@@ -54,9 +54,8 @@ namespace Castles
 
 		public Elevator elevator {get;set;}
 		public Moving moving {get;set;}
-		public Blinking blinking {get;set;}
 		public Generator generator {get;set;}
-		public Action action {get;set;}
+		public BaseAction action {get;set;}
 
         /// <summary>
         /// Object for door
@@ -90,9 +89,6 @@ namespace Castles
 
 				if (moving != null)
 					UpdateMoving(moving);
-
-				if (blinking != null)
-					UpdateBlinking(blinking);
 
 				if (generator != null)
 					UpdateGenerator(generator);
@@ -153,11 +149,6 @@ namespace Castles
 					break;					
 				}
 			}
-
-		}
-
-		private void UpdateBlinking(Blinking blinking)
-		{
 
 		}
 

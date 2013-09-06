@@ -16,7 +16,6 @@ namespace Castles
 		{
 			// default behavior
 			level = 1;
-            theme = "stone";
 
 			handledPlaforms= new List<Platform>();
 			Monsters = new List<Monster>();
@@ -49,14 +48,6 @@ namespace Castles
 		[XmlAttribute]
 		public string name {get;set;}
 
-        /// <summary>
-        /// Level theme
-        /// </summary>
-		[XmlAttribute]
-		public string theme {get;set;}
-
-		public Dimension Dimension {get;set;}
-		//public List<Layer> Layers {get;set;}
         public List<Platform> Platforms{ get; set; }
 
 		public List<EntityDef> EntityDefs { get; set; }
@@ -369,16 +360,6 @@ layer = layer
 					pPlatform.moving.Current.Y == desiredPosition.Y))
 				{
 					//platform is somewhere else...we cannot get on.
-					return null;
-				}
-			}
-
-			//blinking
-			if (pPlatform.blinking != null)
-			{
-				if (!pPlatform.blinking.Visible)
-				{
-					//platform is not visible we cannot get on.
 					return null;
 				}
 			}

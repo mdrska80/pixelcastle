@@ -90,10 +90,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="actions\action_detectHidden.cs" />
     <Compile Include="actions\action_generateMonster.cs" />
-    <Compile Include="actions\action_jump.cs" />
     <Compile Include="actions\action_togglePlatform.cs" />
-    <Compile Include="actions\action_warp.cs" />
+    <Compile Include="system\IAction.cs" />
     <Compile Include="commands\Command_NotRecognized.cs" />
     <Compile Include="commands\Command_test.cs" />
     <Compile Include="gameObjects\Experience.cs" />
@@ -108,7 +108,9 @@
       <DependentUpon>gem.cs</DependentUpon>
     </Compile>
     <Compile Include="gameObjects\level\door.cs" />
-    <Compile Include="gameObjects\level\IToogable.cs" />
+    <Compile Include="gameObjects\level\hidden.cs" />
+    <Compile Include="gameObjects\skills\Skill_Clairvoyance.cs" />
+    <Compile Include="system\IToogable.cs" />
     <Compile Include="gameObjects\npc.cs" />
     <Compile Include="gameObjects\NPCs\NPC_Guard.cs" />
     <Compile Include="gameObjects\NPCs\NPC_SkillTrainer.cs" />
@@ -128,15 +130,13 @@
     <Compile Include="gameObjects\monster.cs" />
     <Compile Include="gameObjects\player.cs" />
     <!-- GameObjects, Level related -->
-    <Compile Include="gameObjects\level\blinking.cs" />
-    <Compile Include="gameObjects\level\dimension.cs" />
     <Compile Include="gameObjects\level\elevator.cs" />
     <Compile Include="gameObjects\level\generator.cs" />
     <Compile Include="gameObjects\level\level.cs" />
     <Compile Include="gameObjects\level\level.transformations.cs">
       <DependentUpon>level.cs</DependentUpon>
     </Compile>
-    <Compile Include="gameObjects\level\entityDef.cs" />
+    <Compile Include="system\entityDef.cs" />
     <Compile Include="gameObjects\level\moving.cs" />
     <Compile Include="gameObjects\level\platform.cs" />
     <!-- ingame items -->
@@ -181,7 +181,6 @@
     <Compile Include="tools\Extensions.cs" />
     <Compile Include="tools\enums.cs" />
     <Compile Include="tools\common.cs" />
-    <Compile Include="tools\score.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CastlesConfiguration.xml">

@@ -1,8 +1,8 @@
 namespace Castles
 {
-    public partial class Action
+    public class Action_GenerateMonster : BaseAction
     {
-        public void Execute_generateMonster(Platform p, Entity e)
+        public override void Execute(Platform p, Entity e)
         {
             if (IsActive)
             {

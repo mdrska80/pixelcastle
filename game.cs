@@ -18,7 +18,6 @@ namespace Castles
 
         public Level level;
         public Player player;
-        public Score highScore;
 
         public Vector2i boardOrigin;
         public RenderWindow window;

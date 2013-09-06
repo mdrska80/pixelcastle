@@ -5,9 +5,9 @@ using Castles.Tools;
 
 namespace Castles
 {
-	public partial class Action
+	public class Action_Teleport : BaseAction
 	{
-		public void Execute_teleport(Platform p, Entity e)
+		public override void Execute(Platform p, Entity e)
 		{
 			if (IsActive)
 			{

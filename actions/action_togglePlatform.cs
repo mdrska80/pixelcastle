@@ -2,9 +2,9 @@ using Castles.Tools;
 
 namespace Castles
 {
-    public partial class Action
+    public class Action_TogglePlatform : BaseAction
     {
-        public void Execute_togglePlatform(Platform p, Entity e)
+        public override void Execute(Platform p, Entity e)
         {
             if (IsActive)
             {
@@ -18,11 +18,11 @@ namespace Castles
 
                 if (px != null)
                 {
-                    Execute_createPlatform(p, e);
+                    new Action_CreatePlatform().Execute(p, e);
                 }
                 else
                 {
-                    Execute_destroyPlatform(p,e);
+                    new Action_DestroyPlatform().Execute(p, e);
                 }
             }
         }
