@@ -119,9 +119,9 @@
     <Compile Include="gameObjects\skills\ISkill.cs" />
     <Compile Include="gameObjects\skills\Skill_Immortal.cs" />
     <Compile Include="gameObjects\skills\Skill_Walk.cs" />
-    <Compile Include="managers\CommandManager.cs" />
+    <Compile Include="Managers\CommandManager.cs" />
     <Compile Include="commands\ICommand.cs" />
-    <Compile Include="managers\EventManager.cs" />
+    <Compile Include="Managers\EventManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <!-- GameObjects -->
     <Compile Include="gameObjects\entity.cs" />
@@ -153,9 +153,9 @@
     <Compile Include="actions\action_destroyPlatform.cs" />
     <Compile Include="actions\action_createPlatform.cs" />
     <!-- Managers -->
-    <Compile Include="managers\resourceManager.cs" />
-    <Compile Include="managers\screenManager.cs" />
-    <Compile Include="managers\InputManager.cs" />
+    <Compile Include="Managers\resourceManager.cs" />
+    <Compile Include="Managers\screenManager.cs" />
+    <Compile Include="Managers\InputManager.cs" />
     <!-- Common -->
     <Compile Include="program.cs" />
     <Compile Include="game.cs" />
